@@ -1,0 +1,11 @@
+[COLS]
+FIRST,LAST,ID,COST
+
+[PATTERNS]
+# Sample Comment 1
+^(?<FIRST>[^\t\-]+)-(?<ID>[^\t]+)\t(?<LAST>[^\t]+).*\$(?<COST>\d+).*$
+^(?<FIRST>[^\t\-]+)-(?<ID>[^\t]+)\t(?<LAST>[^\t]+).*$
+# Sample Comment 2
+^(?<FIRST>[^\t\-]+)\t(?<LAST>[^\t]+).*\$(?<COST>\d+).*$
+^(?<FIRST>[^\t\-]+)\t(?<LAST>[^\t]+).*$
+^$

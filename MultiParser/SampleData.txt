@@ -1,0 +1,8 @@
+Joe	Smith	test $100 test
+Jane	Doe	$400 aa 22
+Bob-F123	Foo 
+Dan-X222	Foober	$671
+this is a line with no tabs at all
+Jim Davis	aaa	$12345678
+
+
