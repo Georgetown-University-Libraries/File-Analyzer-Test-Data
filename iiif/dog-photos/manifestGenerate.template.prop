@@ -1,0 +1,61 @@
+# URL Prefix to prepend to IIIF resource URL's for this proejct
+IIIFRoot: https://YOUR=IMAGE-SERVER-URL
+
+# Manifest Output Directory
+# If blank, the current dir will be used
+# Enter the path as a linux style path even for windows
+#   \\server\share\path --> //server/share/path
+ManifestOuputDir: //YOUR-SERVER-PATH/IIIF/manifests
+
+# Manifest Output File
+# Name of the top level manifest file that will be generated
+ManifestOuputFile: dog-photos.json 
+
+# Create Collection Manifest - An individual manifest will be generated for each subfolder 
+# and registered in a collection level manifest
+# CreateCollectionManifest: true
+CreateCollectionManifest: false
+
+# Manifest Logo URL
+# URL to a logo image to embed within the manifest
+ManifestLogoURL: 
+
+# Manifest Metadata Input File
+# - EAD File containing metadata
+# - CSV File for each input directory of resources
+# If blank, this property file will be utilized
+ManifestMetadataInputFile: dogPhotosEAD.xml
+
+# Manifest Metadata 
+# - If not defined in another external metadata file
+Title: Sample Manifest File with Dog Photos
+Attribution: Sample file illustrating File Analyzer functionality
+DateCreated: 2017-12-12
+Creator: Terry Brady, Georgetown University Library
+#Description:
+#Rights: 
+
+# Get Item Identifier
+# - FolderName - determine the item identifier from the folder name
+# - MetataFile - extract the item identifer from metadata 
+#   - mets.xml from DSpace AIP export
+#   - handle from DSpace Simple Archive Format format
+#   - dublin_core.xml from DSpace Simple Archive Format metadata file
+#GetItemIdentifer: MetadataFile
+GetItemIdentifier: FolderName
+
+# Get Item Metadata
+# - MetadataFile - extract metadata from a file
+#   - mets.xml from DSpace AIP export
+#   - dublin_core.xml from DSpace Simple Archive Format metadata file
+# - RESTAPI - extract metadata using the DSpace REST API
+# - None - no metadata file exists
+#GetItemMetadata: RESTAPI
+GetItemMetadata: None
+#GetItemMetadata: MetadataFile
+
+# Manifest Project
+# Name of the Manifest Project (in code) class that will provide custom translation.
+# If blank, a default value will be assigned.
+# The class should be the name of an Enum that implements ManifestProjectTranslate
+#ManifestProject: 

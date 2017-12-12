@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ead xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <eadheader repositoryencoding="iso15511" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b">
+        <eadid></eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper>
+                    <num>dog.photos</num>
+                </titleproper>
+            </titlestmt>
+            <publicationstmt>
+                <publisher></publisher>
+                <address>
+                    <addressline></addressline>
+                    <addressline></addressline>
+                </address>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation>
+                <date>2017-12-12T15:45-0400</date>
+            </creation>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="collection">
+        <did>
+            <unittitle>Sample Dog Photos</unittitle>
+            <unitid>dog.photos</unitid>
+            <repository>
+                <corpname>Working Repository</corpname>
+            </repository>
+            <langmaterial>
+                <language langcode="eng"/>
+            </langmaterial>
+            <physdesc>
+                <extent></extent>
+                <extent></extent>
+            </physdesc>
+            <unitdate>2006-2017</unitdate>
+        </did>
+        <dsc>
+            <c01 id="ref0" level="series">
+                <did>
+                    <unittitle>Sample Dog Photos</unittitle>
+                </did>
+                <c02 id="ref1" level="file">
+                    <did>
+                        <unittitle>Dog Outside</unittitle>
+                    </did>
+                    <c03 id="ref1y" level="file">
+                        <did>
+                            <unittitle>Young Dog</unittitle>
+                            <container id="cid395001y" type="Box" label="Text">1</container>
+                            <container parent="cid395001y" type="Folder">2000-2009</container>
+                        </did>
+                    </c03>
+                    <c03 id="ref1o" level="file">
+                        <did>
+                            <unittitle>Old Dog</unittitle>
+                            <container id="cid395001o" type="Box" label="Text">1</container>
+                            <container parent="cid395001o" type="Folder">2010-2020</container>
+                        </did>
+                    </c03>
+                </c02>
+                <c02 id="ref2" level="file">
+                    <did>
+                        <unittitle>Dog on Bed</unittitle>
+                    </did>
+                    <c03 id="ref2y" level="file">
+                        <did>
+                            <unittitle>Young Dog</unittitle>
+                            <container id="cid395002y" type="Box" label="Text">2</container>
+                            <container parent="cid395002y" type="Folder">2000-2009</container>
+                        </did>
+                    </c03>
+                    <c03 id="ref2o" level="file">
+                        <did>
+                            <unittitle>Old Dog</unittitle>
+                            <container id="cid395002o" type="Box" label="Text">2</container>
+                            <container parent="cid395002o" type="Folder">2010-2020</container>
+                        </did>
+                    </c03>
+                </c02>
+                <c02 id="ref3" level="file">
+                    <did>
+                        <unittitle>Dog in Snow</unittitle>
+                    </did>
+                    <c03 id="ref3y" level="file">
+                        <did>
+                            <unittitle>Young Dog</unittitle>
+                            <container id="cid395003y" type="Box" label="Text">3</container>
+                            <container parent="cid395003y" type="Folder">2000-2009</container>
+                        </did>
+                    </c03>
+                    <c03 id="ref3o" level="file">
+                        <did>
+                            <unittitle>Old Dog</unittitle>
+                            <container id="cid395003o" type="Box" label="Text">3</container>
+                            <container parent="cid395003o" type="Folder">2010-2020</container>
+                        </did>
+                    </c03>
+                </c02>
+                <c02 id="ref4" level="file">
+                    <did>
+                        <unittitle>Dog in Costume</unittitle>
+                    </did>
+                    <c03 id="ref4y" level="file">
+                        <did>
+                            <unittitle>Young Dog</unittitle>
+                            <container id="cid395004y" type="Box" label="Text">4</container>
+                            <container parent="cid395004y" type="Folder">2000-2009</container>
+                        </did>
+                    </c03>
+                    <c03 id="ref4o" level="file">
+                        <did>
+                            <unittitle>Old Dog</unittitle>
+                            <container id="cid395004o" type="Box" label="Text">4</container>
+                            <container parent="cid395004o" type="Folder">2010-2020</container>
+                        </did>
+                    </c03>
+                </c02>
+            </c01>
+            <c01 id="ref5" level="file">
+                <did>
+                    <unittitle>Cat Photos</unittitle>
+                    <container id="cid395005" type="Box" label="Text">5</container>
+                    <container parent="cid395005" type="Folder">2000-2020</container>
+                </did>
+            </c01>
+            <c01 id="ref6" level="file">
+                <did>
+                    <unittitle>Horse Photos</unittitle>
+                    <container id="cid395006" type="Box" label="Text">6</container>
+                    <container parent="cid395006" type="Folder">2000-2020</container>
+                </did>
+            </c01>
+        </dsc>
+    </archdesc>
+</ead>
