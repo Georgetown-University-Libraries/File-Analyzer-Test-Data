@@ -5,7 +5,7 @@
 
 In this example, we will use a special project translation class to replicate the folder structure as ranges within the manifest.
 
-## Step 1: On the "File Test Properties" tab of "Criteria" tab, select "ByFolderName"
+## Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByFolderName"
 
 Then click "Analyze"...
 
@@ -17,7 +17,7 @@ Note the sequence and range information assigned to each image.
 
 ## Step 2: Preview the results in Universal Viewer
 
-Note the named ranges present on the left hand side.
+Note the file system folder structure present on the left hand side.
 
 ![Screenshot](tutorial-screenshots/uv4.png)
 

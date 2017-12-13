@@ -5,7 +5,7 @@
 
 In this example, we will use a special project translation class to sort the images by date created and then generate date ranges for each of the images.
 
-## Step 1: On the "File Test Properties" tab of "Criteria" tab, select "ByCreationDate"
+## Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByCreationDate"
 
 Then click "Analyze"...
 
