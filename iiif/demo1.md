@@ -25,9 +25,10 @@ The "Manifest Generate Property Filename" should match the name of the file that
 ![Screenshot](tutorial-screenshots/fa5.png)
 
 ## Step 6: Preview the Manifest in the Universal Viewer
-Note that the image filenames are used as canvas labels.
 
 ![Screenshot](tutorial-screenshots/uv1.png)
+
+Note that the image filenames are used as canvas labels.
 
 ![Screenshot](tutorial-screenshots/uv1a.png)
 

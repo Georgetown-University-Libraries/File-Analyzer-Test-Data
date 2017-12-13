@@ -34,7 +34,11 @@ Since this application was built to support content described in DSpace, the fol
 
 ## Step 4: Preview the results in Universal Viewer
 
+Note the descriptive metadata in the right-hand panel.
+
 ![Screenshot](tutorial-screenshots/uv2.png)
+
+Note the descriptive canvas names.
 
 ![Screenshot](tutorial-screenshots/uv2a.png)
 
