@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<dublin_core schema="dc">
+  <dcvalue element="date" qualifier="created" language="en">2013</dcvalue>
+  <dcvalue element="identifier" qualifier="uri" language="en">https://github.com/Georgetown-University-Libraries/File-Analyzer/blob/iiif2/demo/src/main/edu/georgetown/library/fileAnalyzer/filetest/iiif/README.md</dcvalue>
+  <dcvalue element="description" qualifier="none" language="en">This sample image in provided to illustrate how the File Analyzer can generate a IIIF Manifest</dcvalue>
+  <dcvalue element="title" qualifier="none" language="en">Photos of Lily outside in 2013</dcvalue>
+  <dcvalue element="subject" qualifier="lcsh" language="en">dog</dcvalue>
+  <dcvalue element="subject" qualifier="lcsh" language="en">outside</dcvalue>
+</dublin_core>
