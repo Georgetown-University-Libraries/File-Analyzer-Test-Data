@@ -1,5 +1,6 @@
-File-Analyzer-Test-Data
-=======================
+# File-Analyzer-Test-Data
+
+## [IIIF Manifest Builder Tutorial](iiif/README.md)
 
 Sample data files to illustrate the capabilities of the File Analyzer (http://georgetown-university-libraries.github.io/File-Analyzer/)
 

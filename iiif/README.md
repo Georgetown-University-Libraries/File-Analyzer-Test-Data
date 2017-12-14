@@ -52,5 +52,5 @@ The File Analyser is a Java Swing desktop application.  The application assumes 
 	
 ## Step 5: Launch File Analyzer (DemoFileAnalyzer-2.0.jar)
 
-** Main Menu ** | [Next](demo1.md) 
+**Main Menu** | [Next](demo1.md) 
 ------------------------- | ------------------------- 
