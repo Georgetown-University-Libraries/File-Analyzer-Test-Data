@@ -8,7 +8,7 @@ The initial version of this application was built to leverage metadata authored 
 
 The File Analyser is a Java Swing desktop application.  The application assumes that the end user has desktop access to image files and metadata to be merged into a manifest file.  If the application is to be run against a remote file system, some window emulation will be needed to initiate a session.
 
-**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [Custom Code](custom.md)
+**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [Custom Code](code.md)
 ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | -------------------------
 
 ## Step 1: Install File Analyzer
