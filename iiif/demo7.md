@@ -20,7 +20,7 @@ The named folders of images are linked to EAD components by box and folder numbe
 
 Then click "Analyze"...
 
-![Screenshot](tutorial-screenshots/fad5.png)
+![Screenshot](tutorial-screenshots/fad7.png)
 
 ## Step 3: Preview the results in Universal Viewer
 
