@@ -8,8 +8,18 @@ The initial version of this application was built to leverage metadata authored 
 
 The File Analyser is a Java Swing desktop application.  The application assumes that the end user has desktop access to image files and metadata to be merged into a manifest file.  If the application is to be run against a remote file system, some window emulation will be needed to initiate a session.
 
-**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [Custom Code](code.md)
-------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | -------------------------
+## Directory Overview
+
+* dog-photos
+  * This is the directory to scan with File Analyzer
+  * Images are grouped into boxes and then year created
+  * Item metadata exists in dublin_core.xml in each folder
+* dog-photos-linked-dao
+  * iiif assets that will be referenced directly in the EAD
+
+
+**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [EAD Ranges + DAO's](demo7.md) | [Custom Code](code.md)
+------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | -------------------------
 
 ## Step 1: Install File Analyzer
 * [File Analyzer Overview](https://github.com/Georgetown-University-Libraries/File-Analyzer)

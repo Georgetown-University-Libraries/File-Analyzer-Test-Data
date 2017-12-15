@@ -25,6 +25,7 @@ ManifestLogoURL:
 # - CSV File for each input directory of resources
 # If blank, this property file will be utilized
 ManifestMetadataInputFile: dogPhotosEAD.xml
+#ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
 
 # Manifest Metadata 
 # - If not defined in another external metadata file
