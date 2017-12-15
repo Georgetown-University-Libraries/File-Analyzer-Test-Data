@@ -3,9 +3,7 @@
 [Main Menu](README.md) | [Next](demo6.md) 
 ------------------------- | ------------------------- 
 
-In this example, we will use use an EAD file to build project metadata and project ranges.  
-
-The named folders of images are linked to EAD components by box and folder numbers.
+In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
 
 ## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEADWithLinkedDAO.xml](dog-photos/dogPhotosEADWithLinkedDAO.xml#L135-L145)"
 
