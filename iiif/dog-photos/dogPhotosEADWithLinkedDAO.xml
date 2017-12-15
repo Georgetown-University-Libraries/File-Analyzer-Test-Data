@@ -132,6 +132,7 @@
                         <container id="cid395005b" type="Box" label="Text">5</container>
                         <container parent="cid395005b" type="Folder">2000-2020</container>
                     </did>
+                    <!-- "IIIFRoot" will be replaced with IIIFRoot -->
                     <dao ns2:href="IIIFRoot-linked-dao/yawn.jpg">
                         <daodesc>
                             <p>Lily Yawning</p>
