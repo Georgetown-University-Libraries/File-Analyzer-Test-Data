@@ -6,8 +6,8 @@ Since this application was built to support content described in DSpace, the fol
 
 * DSpace metadata input file: dublin_core.xml
 * DSpace AIP export file: mets.xml
+* CSV File 
 * Future Support
-  * CSV File 
   * DSpace REST API 
   * Embedded metadata within images
 
