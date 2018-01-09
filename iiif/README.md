@@ -18,8 +18,8 @@ The File Analyser is a Java Swing desktop application.  The application assumes 
   * iiif assets that will be referenced directly in the EAD
 
 
-**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [EAD Ranges + DAO's](demo7.md) | [Custom Code](code.md)
-------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | -------------------------
+**Main Menu** | [Basic Manifest](demo1.md) | [Item Metadata](demo2.md) | [Date Ranges](demo3.md) | [Folder Ranges](demo4.md) | [EAD+Folder Ranges](demo5.md) | [EAD Ranges](demo6.md) | [EAD Ranges + DAO's](demo7.md) | [CSV Metadata](demo8.md) | [Custom Code](code.md)
+------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | ------------------------- | -------------------------
 
 ## Step 1: Install File Analyzer
 * [File Analyzer Overview](https://github.com/Georgetown-University-Libraries/File-Analyzer)

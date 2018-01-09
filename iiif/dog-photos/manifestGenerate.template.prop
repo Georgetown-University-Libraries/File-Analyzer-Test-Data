@@ -1,5 +1,8 @@
-# URL Prefix to prepend to IIIF resource URL's for this proejct
-IIIFRoot: https://YOUR=IMAGE-SERVER-URL
+# URL Prefix to prepend to IIIF resource URL's for this project
+IIIFRoot: https://YOUR-IMAGE-SERVER-URL/project-path
+
+# URL Prefix to prepend to manifests in a collection manifest
+# ManifestRoot: https://YOUR-IMAGE-SERVER-URL/manifest-path
 
 # Manifest Output Directory
 # If blank, the current dir will be used
@@ -27,6 +30,7 @@ ManifestLogoURL:
 #ManifestMetadataInputFile: 
 ManifestMetadataInputFile: dogPhotosEAD.xml
 #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+#ManifestMetadataInputFile: metadata.csv
 
 # Manifest Metadata 
 # - If not defined in another external metadata file
