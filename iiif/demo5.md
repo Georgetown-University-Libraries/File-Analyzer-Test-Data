@@ -14,6 +14,8 @@ The named folders of images are linked to EAD components by box and folder numbe
     # - CSV File for each input directory of resources
     # If blank, this property file will be utilized
     ManifestMetadataInputFile: dogPhotosEAD.xml
+    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
 
 ## Step 2: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMap"
 

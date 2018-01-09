@@ -6,8 +6,8 @@ Since this application was built to support content described in DSpace, the fol
 
 * DSpace metadata input file: dublin_core.xml
 * DSpace AIP export file: mets.xml
+* CSV File 
 * Future Support
-  * CSV File 
   * DSpace REST API 
   * Embedded metadata within images
 
@@ -17,12 +17,17 @@ Since this application was built to support content described in DSpace, the fol
 ## Step 1: In manifestGenerate.prop, set GetItemMetadata to "MetadataFile"
 
     # Get Item Metadata
-    # - MetadataFile - extract metadata from a file
+    # - ItemMetadataFile - extract metadata from a file
     #   - mets.xml from DSpace AIP export
     #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
     # - RESTAPI - extract metadata using the DSpace REST API
     # - None - no metadata file exists
-    GetItemMetadata: MetadataFile
+    #GetItemMetadata: RESTAPI
+    #GetItemMetadata: None
+    GetItemMetadata: ItemMetadataFile
+    #GetItemMetadata: ManifestMetadataFile    
 
 ## Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
 

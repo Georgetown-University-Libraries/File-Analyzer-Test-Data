@@ -1,5 +1,8 @@
-# URL Prefix to prepend to IIIF resource URL's for this proejct
-IIIFRoot: https://YOUR=IMAGE-SERVER-URL
+# URL Prefix to prepend to IIIF resource URL's for this project
+IIIFRoot: https://YOUR-IMAGE-SERVER-URL/project-path
+
+# URL Prefix to prepend to manifests in a collection manifest
+# ManifestRoot: https://YOUR-IMAGE-SERVER-URL/manifest-path
 
 # Manifest Output Directory
 # If blank, the current dir will be used
@@ -24,8 +27,10 @@ ManifestLogoURL:
 # - EAD File containing metadata
 # - CSV File for each input directory of resources
 # If blank, this property file will be utilized
+#ManifestMetadataInputFile: 
 ManifestMetadataInputFile: dogPhotosEAD.xml
 #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+#ManifestMetadataInputFile: metadata.csv
 
 # Manifest Metadata 
 # - If not defined in another external metadata file
@@ -36,27 +41,30 @@ Creator: Terry Brady, Georgetown University Library
 #Description:
 #Rights: 
 
-# Get Item Identifier
-# - FolderName - determine the item identifier from the folder name
-# - MetataFile - extract the item identifer from metadata 
+# - ItemMetadataFile - extract metadata from an item-specific file
 #   - mets.xml from DSpace AIP export
-#   - handle from DSpace Simple Archive Format format
 #   - dublin_core.xml from DSpace Simple Archive Format metadata file
-#GetItemIdentifer: MetadataFile
-GetItemIdentifier: FolderName
+# - RESTAPI - extract metadata using the DSpace REST API (Future)
+# - None - no item-specific metadata exists
+#GetItemIdentifer: ItemMetadataFile
+#GetItemIdentifier: FolderName
+GetItemIdentifier: FileName
 
 # Get Item Metadata
-# - MetadataFile - extract metadata from a file
+# - ItemMetadataFile - extract metadata from a file
 #   - mets.xml from DSpace AIP export
 #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+# - ManfiestMetadataFile - manifest level file containing metadata for all items
+#   - CSV files
 # - RESTAPI - extract metadata using the DSpace REST API
 # - None - no metadata file exists
 #GetItemMetadata: RESTAPI
 GetItemMetadata: None
-#GetItemMetadata: MetadataFile
+#GetItemMetadata: ItemMetadataFile
+#GetItemMetadata: ManifestMetadataFile
 
 # Manifest Project
 # Name of the Manifest Project (in code) class that will provide custom translation.
 # If blank, a default value will be assigned.
-# The class should be the name of an Enum that implements ManifestProjectTranslate
+# The class should be the name of an Enum that implements ManifestProjectTranslateEnum
 #ManifestProject: 

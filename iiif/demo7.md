@@ -13,6 +13,7 @@ In this example, we will also include digital objects (DAO's) defined within the
     # If blank, this property file will be utilized
     #ManifestMetadataInputFile: dogPhotosEAD.xml
     ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
 
 ## Step 2: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "EADFolderMapSubjectsOnly"
 
@@ -28,5 +29,5 @@ Note the additional items that have been imported by Digital Object URL in the E
 
 ![Screenshot](tutorial-screenshots/uv7a.png)
 
-[Main Menu](README.md) | [Next](code.md) 
+[Main Menu](README.md) | [Next](demo8.md) 
 ------------------------- | ------------------------- 
