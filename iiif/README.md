@@ -10,6 +10,9 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 
 ![Flow Diagram](overview.png)
 
+**Main Menu** | [Next](setup.md) 
+------------------------- | ------------------------- 
+
 - **Main Menu** 
 * [Setup](setup.md)
 * [Basic Manifest](demo1.md) 
@@ -23,5 +26,7 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 * [Collection Manifests](demo9.md) 
 * [Custom Code](code.md)
 
-**Main Menu** | [Next](setup.md) 
-------------------------- | ------------------------- 
+
+## Demonstration Video
+
+[![Demonstration Video](https://i.ytimg.com/vi/mFpgjzkOOWo/hqdefault.jpg)](https://www.youtube.com/watch?v=mFpgjzkOOWo)
