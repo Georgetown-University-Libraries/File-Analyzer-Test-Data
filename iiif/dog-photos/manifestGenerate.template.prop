@@ -29,6 +29,11 @@ DirectorySeparator: %2F
 #CreateCollectionManifest: OneItemPerFolder
 #CreateCollectionManifest: ManyItemsPerFolder
 
+# Set2PageView
+#  - false: do not enable 2 page view (default)
+#  - true: enable 2 page view
+#Set2PageView: true
+
 # Manifest Logo URL
 # URL to a logo image to embed within the manifest
 ManifestLogoURL: 
@@ -51,11 +56,12 @@ Creator: Terry Brady, Georgetown University Library
 #Description:
 #Rights: 
 
+# Get Item Identifier
 # - ItemMetadataFile - extract metadata from an item-specific file
 #   - mets.xml from DSpace AIP export
 #   - dublin_core.xml from DSpace Simple Archive Format metadata file
-# - RESTAPI - extract metadata using the DSpace REST API (Future)
-# - None - no item-specific metadata exists
+# - FolderName - folder name contains item identifier
+# - FileName - file name contains item identifier
 #GetItemIdentifer: ItemMetadataFile
 #GetItemIdentifier: FolderName
 GetItemIdentifier: FileName
