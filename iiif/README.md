@@ -18,6 +18,7 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 * [EAD Ranges](demo6.md) 
 * [EAD Ranges + DAO's](demo7.md) 
 * [CSV Metadata](demo8.md) 
+* [Collection Manifests](demo9.md) 
 * [Custom Code](code.md)
 
 **Main Menu** | [Next](setup.md) 

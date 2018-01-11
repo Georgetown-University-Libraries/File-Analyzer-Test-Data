@@ -15,7 +15,7 @@ In this example, we will use a CSV file to populate manifest metdata.
     #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
     ManifestMetadataInputFile: metadata.csv
 
-## Step 2: In manifestGenerate.prop, set ManifestMetadataInputFile to "ManifestMetadataFile"
+## Step 2: In manifestGenerate.prop, set GetItemMetadata to "ManifestMetadataFile"
 
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file
@@ -40,5 +40,5 @@ Note that the metadata was pulled from the CSV file (using the filename as a mat
 
 ![Screenshot](tutorial-screenshots/uv8.png)
 
-[Main Menu](README.md) | [Next](code.md) 
+[Main Menu](README.md) | [Next](demo9.md) 
 ------------------------- | ------------------------- 
