@@ -45,6 +45,10 @@
     # URL Prefix to prepend to IIIF resource URL's for this proejct
     IIIFRoot: https://your.image.server.edu/project
 
+### Set the root URL for accessing generated manifest files
+    # URL Prefix to prepend to manifests in a collection manifest
+    ManifestRoot: //YOUR-SERVER-PATH/IIIF/manifests
+
 ### Set the output file name where your manifest file will be written (this must be web accessible)
 
     # Manifest Output Directory
