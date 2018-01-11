@@ -1,6 +1,6 @@
 # Generate Manifest Metadata from a CSV
 
-[Main Menu](README.md) | [Next](demo6.md) 
+[Main Menu](README.md) | [Next](demo9.md) 
 ------------------------- | ------------------------- 
 
 In this example, we will use a CSV file to populate manifest metdata.

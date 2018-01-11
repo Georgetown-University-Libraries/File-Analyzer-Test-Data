@@ -1,6 +1,6 @@
 # Generate Manifest with EAD Subject Ranges
 
-[Main Menu](README.md) | [Next](code.md) 
+[Main Menu](README.md) | [Next](demo7.md) 
 ------------------------- | ------------------------- 
 
 In this example, we will modify the range listing from the prior example with a different project translator.  

@@ -1,6 +1,6 @@
 # Generate Manifest with EAD Subject Ranges and Digital Object References
 
-[Main Menu](README.md) | [Next](demo6.md) 
+[Main Menu](README.md) | [Next](demo8.md) 
 ------------------------- | ------------------------- 
 
 In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
