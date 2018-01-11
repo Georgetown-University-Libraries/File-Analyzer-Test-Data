@@ -1,18 +1,19 @@
 # Generate Manifest with Item Metadata
 
+[Main Menu](README.md) | [Next](demo3.md) 
+------------------------- | ------------------------- 
+
 The Create Manifest Builder is able to merge item metadata into the manifest file as it is being generated.  
 
 Since this application was built to support content described in DSpace, the following metadata formats are supported.
 
 * DSpace metadata input file: dublin_core.xml
 * DSpace AIP export file: mets.xml
-* CSV File 
-* Future Support
-  * DSpace REST API 
-  * Embedded metadata within images
+* DSpace REST API (future support)
 
-[Main Menu](README.md) | [Next](demo3.md) 
-------------------------- | ------------------------- 
+The application is also designed to support the following non-DSpace specific metadata types
+* CSV File 
+* Embedded metadata within images (future support)
 
 ## Step 1: In manifestGenerate.prop, set GetItemMetadata to "MetadataFile"
 

@@ -3,14 +3,12 @@
 [Main Menu](README.md) | [Next](demo1.md) 
 ------------------------- | ------------------------- 
 
-## Directory Overview
-
-* dog-photos
-  * This is the directory to scan with File Analyzer
-  * Images are grouped into boxes and then year created
-  * Item metadata exists in dublin_core.xml in each folder
-* dog-photos-linked-dao
-  * iiif assets that will be referenced directly in the EAD
+## Prerequisite Software
+* IIIF Image Server such as Loris or Cantaloupe to serve 
+  * image files via the IIIF image API
+* Web Server to serve up 
+  * IIIF manifest files (json files)
+  * Universal viewer software
 
 ## Step 1: Install File Analyzer
 * [File Analyzer Overview](https://github.com/Georgetown-University-Libraries/File-Analyzer)
@@ -24,11 +22,21 @@
   * Dublin core metadata exists in each folder describing the images
   * An EAD file exists at the root directory providing more context about each subfolder with the project
 
+### Directory Overview
+
+* [iiif directory](.)
+  * Your iiif image server should be configured to serve up the contents of this directory
+* [dog-photos](dog-photos)
+  * This is the directory to scan with File Analyzer
+  * Images are grouped into boxes and then year created
+  * Item metadata exists in dublin_core.xml in each folder
+* [dog-photos-linked-dao](dog-photos-linked-dao)
+  * iiif assets that will be referenced directly in the EAD
 
 ## Step 3: Make a local copy of [Manifest Generator Property File](https://github.com/Georgetown-University-Libraries/File-Analyzer/blob/master/demo/src/main/edu/georgetown/library/fileAnalyzer/filetest/iiif/README.md) within the **iiif/dog-photos** directory
 
     cd iiif/dog-photos
-	cp manifestGenerate.template.prop manifestGenerate.prop
+    cp manifestGenerate.template.prop manifestGenerate.prop
 	
 ## Step 4: Configure the manifestGenerate.prop file for your server
 
