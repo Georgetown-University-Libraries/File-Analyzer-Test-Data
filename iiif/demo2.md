@@ -9,7 +9,7 @@ Since this application was built to support content described in DSpace, the fol
 
 * DSpace metadata input file: dublin_core.xml
 * DSpace AIP export file: mets.xml
-* DSpace REST API (future support)
+* DSpace REST API 
 
 The application is also designed to support the following non-DSpace specific metadata types
 * CSV File 

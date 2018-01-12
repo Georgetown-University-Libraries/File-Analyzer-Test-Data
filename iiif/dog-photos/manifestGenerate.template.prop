@@ -14,6 +14,9 @@ ManifestOuputDir: //YOUR-SERVER-PATH/IIIF/manifests
 # Name of the top level manifest file that will be generated
 ManifestOuputFile: dog-photos.json 
 
+# DSpace REST URL (when REST metadata is enabled)
+#DSpaceRestUrl: https://YOUR-DSPACE/rest
+
 # IIIF Directory Separator.
 #  - "/" (default)
 #  - "%2F" may be needed for Cantaloupe Server.
