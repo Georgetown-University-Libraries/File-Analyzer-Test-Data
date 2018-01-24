@@ -1,5 +1,7 @@
 # File-Analyzer-Test-Data
 
+This repository contains sample data that illustrates how to use the File Analyzer application.
+
 ## [IIIF Manifest Builder Tutorial](iiif/README.md)
 
 Sample data files to illustrate the capabilities of the File Analyzer (http://georgetown-university-libraries.github.io/File-Analyzer/)
