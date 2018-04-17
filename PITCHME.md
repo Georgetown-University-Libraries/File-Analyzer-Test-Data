@@ -65,16 +65,24 @@ https://github.com/terrywbrady/info
 @[4-5](Component manifest file prefix)
 @[7-11](Manifest output directory)
 @[13-15](Manifest output file name)
-@[17-18](DSpace REST API Integration - experimental)
 @[20-24](Directory Separator for subfolders of image assets)
+Path/URL construction
++++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[26-33](Collection manifest configuration)
+One Manifest or a Collection of Manifests?
++++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[35-38](2Page view)
 @[40-42](Manifest Logo)
+Display Behavior
++++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[44-51](Global metadata file - applies to all items)
 @[53-60](Global metadata fields)
 @[62-70](Item Identifier Calculation)
 @[72-83](Item Metadata Location)
+Metadata Location
++++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[85-89](Conversion class name - references a java enum class name)
+Range Construction and Field Formatting
 
 ---
 
