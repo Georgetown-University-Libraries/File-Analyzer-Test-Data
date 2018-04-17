@@ -80,8 +80,8 @@ GetItemIdentifier: FileName
 #GetItemMetadata: RESTAPI
 GetItemMetadata: None
 #GetItemMetadata: ItemMetadataFile
-#GetItemMetadata: ManifestMetadataFile
-
+#GetItemMetadata: ManifestMetadataFile 
+ 
 # Manifest Project
 # Name of the Manifest Project (in code) class that will provide custom translation.
 # If blank, a default value will be assigned.
