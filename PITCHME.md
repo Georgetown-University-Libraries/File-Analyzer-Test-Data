@@ -43,8 +43,38 @@ https://github.com/terrywbrady/info
 
 - Re-use metadata wherever possible
 - Assemble metadata and image files to facilitate manifest generation
+  - Developer intervention not needed!
 - Use our [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer) application for automation 
 - Try it yourself!
   - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
   
 +++?image=iiif/overview.png&size=auto 90%
+
+---
+
+## Manifest Generation Property File
+
+- Address of IIIF Server
+- Manifest Output Directory
+- Where to find metadata
+- How to assemble manifest contents
+
++++?image=iiif/dog-photos/manifestGenerate.template.prop
+@[1-2](URL Prefix for image resources)
+@[4-5](Component manifest file prefix)
+@[7-11](Manifest output directory)
+@[13-15](Manifest output file name)
+@[17-18](DSpace REST API Integration - experimental)
+@[20-24](Directory Separator for subfolders of image assets)
+@[26-33](Collection manifest configuration)
+@[35-38](2Page view)
+@[40-42](Manifest Logo)
+@[44-51](Global metadata file - applies to all items)
+@[53-60](Global metadata fields)
+@[62-70](Item Identifier Calculation)
+@[72-83](Item Metadata Location)
+@[85-89](Conversion class name - references a java enum class name)
+
+
+
+
