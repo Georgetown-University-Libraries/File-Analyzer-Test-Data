@@ -47,6 +47,7 @@ https://github.com/terrywbrady/info
 - Use our [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer) application for automation 
 - Try it yourself!
   - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
+- We hope this is useful for other institutions
   
 +++?image=iiif/overview.png&size=auto 90%
 
@@ -59,7 +60,7 @@ https://github.com/terrywbrady/info
 - Where to find metadata
 - How to assemble manifest contents
 
-+++?code=iiif/dog-photos/manifestGenerate.template.prop
++++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[1-2](URL Prefix for image resources)
 @[4-5](Component manifest file prefix)
 @[7-11](Manifest output directory)
@@ -75,6 +76,7 @@ https://github.com/terrywbrady/info
 @[72-83](Item Metadata Location)
 @[85-89](Conversion class name - references a java enum class name)
 
+---
 
-
+## Tutorial Demo
 
