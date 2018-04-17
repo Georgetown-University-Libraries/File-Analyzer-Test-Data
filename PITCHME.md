@@ -55,10 +55,29 @@ https://github.com/terrywbrady/info
 
 ## Manifest Generation Property File
 
-- Address of IIIF Server
-- Manifest Output Directory
+@ul
+
+- Root Path to IIIF Server
+- Where to write the manifest file
+- Construct one manifest or a collection of manifests
 - Where to find metadata
-- How to assemble manifest contents
+- How to assemble/format manifest ranges
+
+@ulend
+
++++
+
+## Where to find metadata
+
+@ul
+
+- One common property file for all images
+- EAD File describing folders and items
+- CSV file containing item specific data
+- Separate metadata files for each item
+- DSpace REST API calls
+
+@ulend
 
 +++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[1-2](URL Prefix for image resources)
@@ -66,25 +85,30 @@ https://github.com/terrywbrady/info
 @[7-11](Manifest output directory)
 @[13-15](Manifest output file name)
 @[20-24](Directory Separator for subfolders of image assets)
-Path/URL construction
-+++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[26-33](Collection manifest configuration)
-One Manifest or a Collection of Manifests?
-+++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[35-38](2Page view)
 @[40-42](Manifest Logo)
-Display Behavior
-+++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[44-51](Global metadata file - applies to all items)
 @[53-60](Global metadata fields)
 @[62-70](Item Identifier Calculation)
 @[72-83](Item Metadata Location)
-Metadata Location
-+++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
 @[85-89](Conversion class name - references a java enum class name)
-Range Construction and Field Formatting
+#### Manifest Prop File Overview
 
 ---
 
 ## Tutorial Demo
 
+@ul
+
+- Basic Manifest
+- Item Metadata
+- Date Ranges
+- Folder Ranges
+- EAD+Folder Ranges
+- EAD Ranges
+- EAD Ranges + DAO's
+- CSV Metadata
+- Collection Manifests
+
+@ulend
