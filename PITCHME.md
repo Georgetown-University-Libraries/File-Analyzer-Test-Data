@@ -59,7 +59,7 @@ https://github.com/terrywbrady/info
 - Where to find metadata
 - How to assemble manifest contents
 
-+++?image=iiif/dog-photos/manifestGenerate.template.prop
++++?code=iiif/dog-photos/manifestGenerate.template.prop
 @[1-2](URL Prefix for image resources)
 @[4-5](Component manifest file prefix)
 @[7-11](Manifest output directory)
