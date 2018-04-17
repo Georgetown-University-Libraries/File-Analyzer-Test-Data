@@ -47,8 +47,4 @@ https://github.com/terrywbrady/info
 - Try it yourself!
   - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
   
-+++
-
-## Process Overview
-
-![Overview Diagram](iiif/overview.png)
++++?image=iiif/overview.png&size=auto 90%
