@@ -5,6 +5,8 @@
 
 The Create Manifest Builder is able to merge item metadata into the manifest file as it is being generated.  
 
+![Basic Use Case With Metadata](tutorial-screenshots/IIIFScenarios/Slide3.JPG)
+
 Since this application was built to support content described in DSpace, the following metadata formats are supported.
 
 * DSpace metadata input file: dublin_core.xml

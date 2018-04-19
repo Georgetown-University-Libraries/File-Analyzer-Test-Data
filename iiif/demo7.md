@@ -5,6 +5,8 @@
 
 In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
 
+![Index by EAD and DAO](tutorial-screenshots/IIIFScenarios/Slide8.JPG)
+
 ## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEADWithLinkedDAO.xml](dog-photos/dogPhotosEADWithLinkedDAO.xml#L135-L145)"
 
     # Manifest Metadata Input File

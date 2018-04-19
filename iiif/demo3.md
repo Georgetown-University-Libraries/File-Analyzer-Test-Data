@@ -5,6 +5,8 @@
 
 In this example, we will use a special project translation class to sort the images by date created and then generate date ranges for each of the images.
 
+![Index By Date](tutorial-screenshots/IIIFScenarios/Slide4.JPG)
+
 ## Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByCreationDate"
 
 Then click "Analyze"...

@@ -5,6 +5,8 @@
 
 In this example, we will use use an EAD file to build project metadata and project ranges.  
 
+![Index by EAD and Folder](tutorial-screenshots/IIIFScenarios/Slide6.JPG)
+
 The named folders of images are linked to EAD components by box and folder numbers.
 
 ## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEAD.xml](dog-photos/dogPhotosEAD.xml)"

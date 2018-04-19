@@ -5,6 +5,8 @@
 
 In this example, we will use a special project translation class to replicate the folder structure as ranges within the manifest.
 
+![Index by Folder](tutorial-screenshots/IIIFScenarios/Slide5.JPG)
+
 ## Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByFolderName"
 
 Then click "Analyze"...

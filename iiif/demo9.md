@@ -3,7 +3,9 @@
 [Main Menu](README.md) | [Next](code.md) 
 ------------------------- | ------------------------- 
 
-In this example, we will use a CSV file to populate manifest metdata.
+In this example, we will generate a collection of manifests (one per each top level folder).
+
+![Collection Manifest](tutorial-screenshots/IIIFScenarios/Slide10.JPG)
 
 ## Step 1: In manifestGenerate.prop, set CreateCollectionManifest to "ManyItemsPerFolder"
 

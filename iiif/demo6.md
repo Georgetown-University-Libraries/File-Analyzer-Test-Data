@@ -5,6 +5,8 @@
 
 In this example, we will modify the range listing from the prior example with a different project translator.  
 
+![Index by EAD](tutorial-screenshots/IIIFScenarios/Slide7.JPG)
+
 The named folders of images are linked to EAD components by box and folder numbers.
 
 ## Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMapSubjectsOnly"

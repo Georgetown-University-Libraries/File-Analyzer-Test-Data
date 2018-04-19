@@ -3,6 +3,8 @@
 [Main Menu](README.md) | [Next](demo2.md) 
 ------------------------- | ------------------------- 
 
+![Basic Use Case](tutorial-screenshots/IIIFScenarios/Slide2.JPG)
+
 ### Select "Create IIIF Manifest" from the dropdown on the "Criteria" panel
 
 ![Screenshot](tutorial-screenshots/fa1.png)
