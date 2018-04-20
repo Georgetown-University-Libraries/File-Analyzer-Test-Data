@@ -25,7 +25,7 @@ https://github.com/terrywbrady/info
 ## Next Steps
 
 - Law Collections Described in EAD
-  - [Digitized AIDS Papers - Test Server](https://repository-test.library.georgetown.edu/handle/10822.2/4410)
+  - Digitized AIDS Papers (on Test Server, VPN Required)
 - Difficult to represent as items in DSpace
 - EAD Hierarchy to be represented in a manifest
 - Instructed our plans
