@@ -25,6 +25,8 @@ Then click "Analyze"...
 
 ![Screenshot](tutorial-screenshots/fad5.png)
 
+![Screenshot](tutorial-screenshots/fad5a.png)
+
 ## Step 3: Preview the results in Universal Viewer
 
 Note the EAD hierarchy and file system folder structure present on the left hand side.
