@@ -32,4 +32,4 @@ Note the EAD hierarchy and file system folder structure present on the left hand
 
 ![Screenshot](tutorial-screenshots/uv5.png)
 
-{% include nav.html %}- 
+{% include nav.html %}
