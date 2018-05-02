@@ -14,7 +14,7 @@
 
 {% else %}
 
-  {% assign curi = 1 %}
+  {% assign curi = 0 %}
   {% for tnav in site.nav %}
     {% assign alt    = tnav.path | append: ".html" %}
     {% if tnav.path == page.url or alt == page.url %}
@@ -25,6 +25,7 @@
   {% assign curn = curi | plus: 1 %}
   {% assign count = site.nav | size %}
 
+<h4>{{page.url}}</h4>
   <div class="navbar">
     <table class="navbar">
     <tr>
