@@ -1,0 +1,50 @@
+{% if site.nav_style == "menu" %}
+<div>
+  <table>
+    <tr>
+      {% for tnav in site.nav %}
+        {% assign alt    = tnav.path | append: ".html" %}
+        <th class="{% if tnav.path == page.url or alt == page.url %}CUR{% endif %}">
+          <a href="{{tnav.path | prepend: site.url}}">{{tnav.name}}</a>
+        </th>
+      {% endfor %}
+    </tr>
+  </table>
+</div>
+
+{% else %}
+
+  {% assign curi = 0 %}
+  {% for tnav in site.nav %}
+    {% assign alt    = tnav.path | append: ".html" %}
+    {% if tnav.path == page.url or alt == page.url %}
+      {% assign curi = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+  {% assign curp = curi | minus: 1 %}
+  {% assign curn = curi | plus: 1 %}
+  {% assign count = site.nav | size %}
+
+  <div class="navbar">
+    <table class="navbar">
+    <tr>
+      <td class="arrow">
+        {% if curp >= 0 %}
+        <a class="button" href="{{site.nav[0].path | prepend: site.url}}">&#127968; Home</a>
+        {% endif %}
+      </td>  
+      <td class="arrow">
+        {% if curp >= 0 %}
+        <a class="button" href="{{site.nav[curp].path | prepend: site.url}}">&#x21E6; {{site.nav[curp].name}}</a>
+        {% endif %}
+      </td>  
+      <td class="CUR">{{site.nav[curi].name}}</td>
+      <td class="arrow">
+        {% if curn < count %}
+        <a class="button" href="{{site.nav[curn].path | prepend: site.url}}">{{site.nav[curn].name}} &#x21E8;</a>
+        {% endif %}
+      </td>
+    </tr>
+    </table>
+  </div>
+{% endif %}

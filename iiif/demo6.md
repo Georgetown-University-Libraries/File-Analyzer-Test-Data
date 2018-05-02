@@ -1,7 +1,6 @@
 # Generate Manifest with EAD Subject Ranges
 
-[Main Menu](README.md) | [Next](demo7.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
 
 In this example, we will modify the range listing from the prior example with a different project translator.  
 
@@ -21,5 +20,4 @@ Note the EAD hierarchy present on the left hand side.
 
 ![Screenshot](tutorial-screenshots/uv6.png)
 
-[Main Menu](README.md) | [Next](demo7.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 

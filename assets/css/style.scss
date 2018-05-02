@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body section.page-header {
+    padding: 0px;
+}
+
+th.CUR, td.CUR, td.arrow:hover {
+    background-color: #daef9b;
+    font-weight: bold;
+}
+
+table.navbar {
+    display: table;
+}
+
+table.navbar td {
+    text-align: center;
+}

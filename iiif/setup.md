@@ -1,7 +1,6 @@
 # Setup: Generating IIIF Manifests with File Analyzer
 
-[Main Menu](README.md) | [Next](demo1.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 ## Prerequisite Software
 * IIIF Image Server such as Loris or Cantaloupe to serve 
@@ -24,13 +23,13 @@
 
 ### Directory Overview
 
-* [iiif directory](.)
+* [iiif directory]({{site.src_path}}/iiif)
   * Your iiif image server should be configured to serve up the contents of this directory
-* [dog-photos](dog-photos)
+* [dog-photos]({{site.src_path}}/iiif/dog-photos)
   * This is the directory to scan with File Analyzer
   * Images are grouped into boxes and then year created
   * Item metadata exists in dublin_core.xml in each folder
-* [dog-photos-linked-dao](dog-photos-linked-dao)
+* [dog-photos-linked-dao]({{site.src_path}}/iiif/dog-photos-linked-dao)
   * iiif assets that will be referenced directly in the EAD
 
 ## Step 3: Make a local copy of [Manifest Generator Property File](https://github.com/Georgetown-University-Libraries/File-Analyzer/blob/master/demo/src/main/edu/georgetown/library/fileAnalyzer/filetest/iiif/README.md) within the **iiif/dog-photos** directory
@@ -65,5 +64,4 @@
 	
 ## Step 5: Launch File Analyzer (DemoFileAnalyzer-2.0.jar)
 
-**Main Menu** | [Next](demo1.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}

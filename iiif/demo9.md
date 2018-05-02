@@ -1,7 +1,6 @@
 # Generate a Collection Manifest
 
-[Main Menu](README.md) | [Next](code.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
 
 In this example, we will generate a collection of manifests (one per each top level folder).
 
@@ -49,6 +48,4 @@ Note that the images have been broken into individual manifests for each box.
 
 ![Screenshot](tutorial-screenshots/uv9d.png)
 
-
-[Main Menu](README.md) | [Next](code.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 

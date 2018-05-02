@@ -1,5 +1,7 @@
 # Generating IIIF Manifests with File Analyzer
 
+{% include nav.html %}
+
 This tutorial is designed to demonstrate how to generate metadata-rich IIIF Manifest files using the File Analyzer.
 
 [Overview Presentation: Building IIIF Manifests with File Analyzer](https://gitpitch.com/Georgetown-University-Libraries/testManifests#/)
@@ -10,23 +12,8 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 
 ![Flow Diagram](overview.png)
 
-**Main Menu** | [Next](setup.md) 
-------------------------- | ------------------------- 
-
-- **Main Menu** 
-* [Setup](setup.md)
-* [Basic Manifest](demo1.md) 
-* [Item Metadata](demo2.md) 
-* [Date Ranges](demo3.md) 
-* [Folder Ranges](demo4.md) 
-* [EAD+Folder Ranges](demo5.md) 
-* [EAD Ranges](demo6.md) 
-* [EAD Ranges + DAO's](demo7.md) 
-* [CSV Metadata](demo8.md) 
-* [Collection Manifests](demo9.md) 
-* [Custom Code](code.md)
-
-
 ## Demonstration Video
 
 [![Demonstration Video](https://i.ytimg.com/vi/mFpgjzkOOWo/hqdefault.jpg)](https://www.youtube.com/watch?v=mFpgjzkOOWo)
+
+{% include nav.html %}

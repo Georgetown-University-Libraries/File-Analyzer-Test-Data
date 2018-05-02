@@ -1,0 +1,32 @@
+title: Building IIIF Manifests with File Analyzer
+description: "Generate a rich IIIF experience from your existing metadata"
+baseurl: "/File-Analyzer-Test-Data" 
+url: "http://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data" 
+tagline: Re-use your metadata
+theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics: UA-297597-14
+
+# --------------------------------
+# Custom additions for the tutorial navigation bar
+# --------------------------------
+
+# src_path - used to construct nested links to code files
+src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/tree/gh-pages"
+
+# nav_style: menu or button
+nav_style: button
+nav:
+  - {name: Intro, path: "/iiif"}
+  - {name: "Setup", path: "/iiif/setup"}
+  - {name: "Basic Manifest", path: "/iiif/demo1"}
+  - {name: "Item Metadata", path: "/iiif/demo2"}
+  - {name: "Date Ranges", path: "/iiif/demo3"}
+  - {name: "Folder Ranges", path: "/iiif/demo4"}
+  - {name: "EAD+Folder Ranges", path: "/iiif/demo5"}
+  - {name: "EAD Ranges", path: "/iiif/demo6"}
+  - {name: "EAD Ranges + DAO’s", path: "/iiif/demo7"}
+  - {name: "CSV Metadata", path: "/iiif/demo8"}
+  - {name: "Collection Manifests", path: "/iiif/demo9"}
+  - {name: "Custom Code", path: "/iiif/code"}
+

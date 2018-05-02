@@ -1,7 +1,6 @@
 # Coding Manifest Project Translations
 
-[Main Menu](README.md) |
-------------------------- | 
+{% include nav.html %}
 
 ## Project Translation Modules implement the [ManifestProjectTranslate](https://github.com/Georgetown-University-Libraries/File-Analyzer/blob/master/demo/src/main/edu/georgetown/library/fileAnalyzer/filetest/iiif/ManifestProjectTranslate.java) interface
 
@@ -126,5 +125,4 @@
     }
 
 	
-[Main Menu](README.md) | 
-------------------------- | 
+{% include nav.html %}

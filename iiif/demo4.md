@@ -1,7 +1,6 @@
 # Generate Manifest with Folder Ranges
 
-[Main Menu](README.md) | [Next](demo5.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 In this example, we will use a special project translation class to replicate the folder structure as ranges within the manifest.
 
@@ -23,5 +22,4 @@ Note the file system folder structure present on the left hand side.
 
 ![Screenshot](tutorial-screenshots/uv4.png)
 
-[Main Menu](README.md) | [Next](demo5.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 

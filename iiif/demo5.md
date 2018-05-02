@@ -1,7 +1,6 @@
 # Generate Manifest with EAD Subject + Folder Ranges
 
-[Main Menu](README.md) | [Next](demo6.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 In this example, we will use use an EAD file to build project metadata and project ranges.  
 
@@ -9,7 +8,7 @@ In this example, we will use use an EAD file to build project metadata and proje
 
 The named folders of images are linked to EAD components by box and folder numbers.
 
-## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEAD.xml](dog-photos/dogPhotosEAD.xml)"
+## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEAD.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEAD.xml)"
 
     # Manifest Metadata Input File
     # - EAD File containing metadata
@@ -33,5 +32,4 @@ Note the EAD hierarchy and file system folder structure present on the left hand
 
 ![Screenshot](tutorial-screenshots/uv5.png)
 
-[Main Menu](README.md) | [Next](demo6.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
