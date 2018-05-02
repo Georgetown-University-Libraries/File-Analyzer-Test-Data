@@ -29,7 +29,9 @@
     <table class="navbar">
     <tr>
       <td class="arrow">
+        {% if curp >= 0 %}
         <a class="button" href="{{site.nav[0].path | prepend: site.url}}">&#127968; Home</a>
+        {% endif %}
       </td>  
       <td class="arrow">
         {% if curp >= 0 %}
