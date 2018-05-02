@@ -1,7 +1,6 @@
 # Generate Basic Manifest
 
-[Main Menu](README.md) | [Next](demo2.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 ![Basic Use Case](tutorial-screenshots/IIIFScenarios/Slide2.JPG)
 
@@ -34,5 +33,4 @@ Note that the image filenames are used as canvas labels.
 
 ![Screenshot](tutorial-screenshots/uv1a.png)
 
-[Main Menu](README.md) | [Next](demo2.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
