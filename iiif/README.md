@@ -1,6 +1,6 @@
 # Generating IIIF Manifests with File Analyzer
 
-[![Start Tutorial](StartTutorial.png)](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
+[![Start Tutorial](../StartTutorial.png)](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
 
 {% include nav.html %}
 
