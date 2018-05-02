@@ -1,5 +1,7 @@
 # Generating IIIF Manifests with File Analyzer
 
+[![Start Tutorial](StartTutorial.png)](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
+
 {% include nav.html %}
 
 This tutorial is designed to demonstrate how to generate metadata-rich IIIF Manifest files using the File Analyzer.
