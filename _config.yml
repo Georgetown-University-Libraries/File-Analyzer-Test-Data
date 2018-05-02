@@ -17,7 +17,7 @@ src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test
 # nav_style: menu or button
 nav_style: button
 nav:
-  - {name: Intro, path: "/intro"}
+  - {name: Intro, path: "/iiif"}
   - {name: "Setup", path: "/setup"}
   - {name: "Basic Manifest", path: "/demo1"}
   - {name: "Item Metadata", path: "/demo2"}
