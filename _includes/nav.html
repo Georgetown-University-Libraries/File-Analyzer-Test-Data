@@ -29,6 +29,9 @@
     <table class="navbar">
     <tr>
       <td class="arrow">
+        <a class="button" href="{{site.nav[0].path | prepend: site.url}}">&#127968; Home</a>
+      </td>  
+      <td class="arrow">
         {% if curp >= 0 %}
         <a class="button" href="{{site.nav[curp].path | prepend: site.url}}">&#x21E6; {{site.nav[curp].name}}</a>
         {% endif %}
