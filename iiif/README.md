@@ -2,7 +2,7 @@
 
 {% include nav.html %}
 
-[&#x21E8; Start Tutorial &#x21E8;](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
+#### [Start Tutorial &#x21E8;](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
 
 This tutorial is designed to demonstrate how to generate metadata-rich IIIF Manifest files using the File Analyzer.
 
