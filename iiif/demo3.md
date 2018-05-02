@@ -1,7 +1,6 @@
 # Generate Manifest with Date Ranges
 
-[Main Menu](README.md) | [Next](demo4.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 In this example, we will use a special project translation class to sort the images by date created and then generate date ranges for each of the images.
 
@@ -23,6 +22,4 @@ Note the date ranges present on the left hand side.
 
 ![Screenshot](tutorial-screenshots/uv3.png)
 
-
-[Main Menu](README.md) | [Next](demo4.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
