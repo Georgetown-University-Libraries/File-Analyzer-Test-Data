@@ -1,1 +1,31 @@
+title: Building IIIF Manifests with File Analyzer
+description: "Generate a rich IIIF experience from your existing metadata"
+baseurl: "/File-Analyzer-Test-Data" 
+url: "http://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data" 
+tagline: Re-use your metadata
 theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics: UA-297597-14
+
+# --------------------------------
+# Custom additions for the tutorial navigation bar
+# --------------------------------
+
+# src_path - used to construct nested links to code files
+src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/tree/gh-pages"
+
+# nav_style: menu or button
+nav_style: button
+nav:
+  - {name: Intro,    path: "/intro"}
+  - {name: Setup,    path: "/setup"}
+  - {name: "Demo 1", path: "/demo1"}
+  - {name: "Demo 2", path: "/demo2"}
+  - {name: "Demo 3", path: "/demo3"}
+  - {name: "Demo 4", path: "/demo4"}
+  - {name: "Demo 5", path: "/demo5"}
+  - {name: "Demo 6", path: "/demo6"}
+  - {name: "Demo 7", path: "/demo7"}
+  - {name: "Demo 8", path: "/demo8"}
+  - {name: "Demo 9", path: "/demo9"}
+  - {name: "Custom Code", path: "/code"}
