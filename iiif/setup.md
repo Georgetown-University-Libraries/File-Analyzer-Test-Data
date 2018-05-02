@@ -1,7 +1,6 @@
 # Setup: Generating IIIF Manifests with File Analyzer
 
-[Main Menu](README.md) | [Next](demo1.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 ## Prerequisite Software
 * IIIF Image Server such as Loris or Cantaloupe to serve 
@@ -65,5 +64,4 @@
 	
 ## Step 5: Launch File Analyzer (DemoFileAnalyzer-2.0.jar)
 
-**Main Menu** | [Next](demo1.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
