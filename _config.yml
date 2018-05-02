@@ -17,15 +17,16 @@ src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test
 # nav_style: menu or button
 nav_style: button
 nav:
-  - {name: Intro,    path: "/intro"}
-  - {name: Setup,    path: "/setup"}
-  - {name: "Demo 1", path: "/demo1"}
-  - {name: "Demo 2", path: "/demo2"}
-  - {name: "Demo 3", path: "/demo3"}
-  - {name: "Demo 4", path: "/demo4"}
-  - {name: "Demo 5", path: "/demo5"}
-  - {name: "Demo 6", path: "/demo6"}
-  - {name: "Demo 7", path: "/demo7"}
-  - {name: "Demo 8", path: "/demo8"}
-  - {name: "Demo 9", path: "/demo9"}
+  - {name: Intro, path: "/intro"}
+  - {name: "Setup", path: "/setup"}
+  - {name: "Basic Manifest", path: "/demo1"}
+  - {name: "Item Metadata", path: "/demo2"}
+  - {name: "Date Ranges", path: "/demo3"}
+  - {name: "Folder Ranges", path: "/demo4"}
+  - {name: "EAD+Folder Ranges", path: "/demo5"}
+  - {name: "EAD Ranges", path: "/demo6"}
+  - {name: "EAD Ranges + DAO’s", path: "/demo7"}
+  - {name: "CSV Metadata", path: "/demo8"}
+  - {name: "Collection Manifests", path: "/demo9"}
   - {name: "Custom Code", path: "/code"}
+
