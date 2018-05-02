@@ -6,7 +6,7 @@ In this example, we will use a CSV file to populate manifest metdata.
 
 ![Use CSV Metadata](tutorial-screenshots/IIIFScenarios/Slide9.JPG)
 
-## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[metdata.csv](dog-photos/metadata.csv)"
+## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[metdata.csv]({{site.src_path}}/iiif/dog-photos/metadata.csv)"
 
     # Manifest Metadata Input File
     # - EAD File containing metadata
