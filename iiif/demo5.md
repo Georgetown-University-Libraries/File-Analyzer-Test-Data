@@ -1,7 +1,6 @@
 # Generate Manifest with EAD Subject + Folder Ranges
 
-[Main Menu](README.md) | [Next](demo6.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 In this example, we will use use an EAD file to build project metadata and project ranges.  
 
@@ -33,5 +32,4 @@ Note the EAD hierarchy and file system folder structure present on the left hand
 
 ![Screenshot](tutorial-screenshots/uv5.png)
 
-[Main Menu](README.md) | [Next](demo6.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}- 
