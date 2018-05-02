@@ -1,7 +1,6 @@
 # Generate Manifest Metadata from a CSV
 
-[Main Menu](README.md) | [Next](demo9.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
 
 In this example, we will use a CSV file to populate manifest metdata.
 
@@ -42,5 +41,4 @@ Note that the metadata was pulled from the CSV file (using the filename as a mat
 
 ![Screenshot](tutorial-screenshots/uv8.png)
 
-[Main Menu](README.md) | [Next](demo9.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
