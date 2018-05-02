@@ -1,7 +1,6 @@
 # Generate Manifest with Item Metadata
 
-[Main Menu](README.md) | [Next](demo3.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
 
 The Create Manifest Builder is able to merge item metadata into the manifest file as it is being generated.  
 
@@ -50,6 +49,4 @@ Note the descriptive canvas names.
 
 ![Screenshot](tutorial-screenshots/uv2a.png)
 
-	
-[Main Menu](README.md) | [Next](demo3.md) 
-------------------------- | ------------------------- 
+{% include nav.html %}
