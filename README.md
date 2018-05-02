@@ -6,7 +6,7 @@ This repository contains sample data that illustrates how to use the File Analyz
 
 Sample data files to illustrate the capabilities of the File Analyzer (http://georgetown-university-libraries.github.io/File-Analyzer/)
 
-[![Start Tutorial](StartTutorial.png)](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/intro)
+[![Start Tutorial](StartTutorial.png)](https://Georgetown-University-Libraries.github.io/File-Analyzer-Test-Data/iiif)
 
 
 ## [File Analyzer Training](https://github.com/Georgetown-University-Libraries/File-Analyzer/wiki/File-Analyzer-Training-Code4Lib-2015#try-it-yourself)
