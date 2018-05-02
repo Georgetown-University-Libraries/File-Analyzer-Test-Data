@@ -12,7 +12,7 @@ google_analytics: UA-297597-14
 # --------------------------------
 
 # src_path - used to construct nested links to code files
-src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/tree/gh-pages"
+src_path: "https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/tree/master"
 
 # nav_style: menu or button
 nav_style: button
