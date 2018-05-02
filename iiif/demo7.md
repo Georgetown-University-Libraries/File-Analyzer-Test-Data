@@ -1,7 +1,6 @@
 # Generate Manifest with EAD Subject Ranges and Digital Object References
 
-[Main Menu](README.md) | [Next](demo8.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
 
 In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
 
@@ -31,5 +30,4 @@ Note the additional items that have been imported by Digital Object URL in the E
 
 ![Screenshot](tutorial-screenshots/uv7a.png)
 
-[Main Menu](README.md) | [Next](demo8.md) 
-------------------------- | ------------------------- 
+{% include nav.html %} 
