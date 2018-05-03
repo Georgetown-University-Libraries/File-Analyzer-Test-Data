@@ -46,7 +46,7 @@ https://github.com/terrywbrady/info
   - Developer intervention not needed!
 - Use our [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer) application for automation 
 - Try it yourself!
-  - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
+  - [Tutorial - Generating IIIF Manifests with File Analyzer](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 - We hope this is useful for other institutions
   
 +++?image=iiif/overview.png&size=auto 90%
@@ -97,7 +97,7 @@ https://github.com/terrywbrady/info
 
 ---
 
-## Tutorial Demo
+## [Tutorial Demo](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 
 @ul
 
