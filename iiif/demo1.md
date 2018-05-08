@@ -25,7 +25,7 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 ![Screenshot](tutorial-screenshots/fa5.png)
 
-## Step 6: Preview the Manifest in the Universal Viewer
+## Preview the Manifest in the Universal Viewer
 
 ![Screenshot](tutorial-screenshots/uv1.png)
 

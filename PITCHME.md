@@ -114,10 +114,14 @@ https://github.com/terrywbrady/info
 @ulend
 
 ---
+### Environment Setup
+
+##[Tutorial Pages](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
+
+---
 ### Basic Manifest
 
 ![Basic Use Case](iiif/tutorial-screenshots/IIIFScenarios/Slide2.JPG)
-
 
 +++
 
@@ -162,7 +166,7 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 +++
 
-## Step 6: Preview the Manifest in the Universal Viewer
+## Preview the Manifest in the Universal Viewer
 
 +++
 
@@ -178,4 +182,282 @@ Note that the image filenames are used as canvas labels.
 
 ---
 
-## Demo 2
+### Generate Manifest with Item Metadata
+
+The Create Manifest Builder is able to merge item metadata into the manifest file as it is being generated.  
+
++++
+
+### Generate Manifest with Item Metadata
+
+![Basic Use Case With Metadata](tutorial-screenshots/IIIFScenarios/Slide3.JPG)
+
++++
+
+### Metadata Support
+
+Since this application was built to support content described in DSpace, the following metadata formats are supported.
+
+* DSpace metadata input file: dublin_core.xml
+* DSpace AIP export file: mets.xml
+* DSpace REST API 
+
+The application is also designed to support the following non-DSpace specific metadata types
+* CSV File 
+* Embedded metadata within images (future support)
+
++++
+
+## Step 1: In manifestGenerate.prop, set GetItemMetadata to "MetadataFile"
+
+    # Get Item Metadata
+    # - ItemMetadataFile - extract metadata from a file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
+    # - RESTAPI - extract metadata using the DSpace REST API
+    # - None - no metadata file exists
+    #GetItemMetadata: RESTAPI
+    #GetItemMetadata: None
+    GetItemMetadata: ItemMetadataFile
+    #GetItemMetadata: ManifestMetadataFile    
+
++++
+
+## Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
+
+![Screenshot](tutorial-screenshots/fa4.png)
+
++++
+
+## Step 3: Review the results. Note that title information is extacted for each item
+
+![Screenshot](tutorial-screenshots/fad2.png)
+
++++
+
+## Step 4: Preview the results in Universal Viewer
+
+Note the descriptive metadata in the right-hand panel.
+
++++
+
+![Screenshot](tutorial-screenshots/uv2.png)
+
++++
+
+Note the descriptive canvas names.
+
+![Screenshot](tutorial-screenshots/uv2a.png)
+
+---
+
+### Generate Manifest with Date Ranges
+
+In this example, we will use a special project translation class to sort the images by date created and then generate date ranges for each of the images.
+
++++
+
+![Index By Date](tutorial-screenshots/IIIFScenarios/Slide4.JPG)
+
++++
+
+### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByCreationDate"
+
+![Screenshot](tutorial-screenshots/fad3.png)
+
++++
+
+Note the sequence and range information assigned to each image.
+
++++
+
+![Screenshot](tutorial-screenshots/fad3a.png)
+
++++
+
+### Step 2: Preview the results in Universal Viewer
+
+Note the date ranges present on the left hand side.
+
++++
+
+![Screenshot](tutorial-screenshots/uv3.png)
+
+--- 
+### Generate Manifest with Folder Ranges
+
+In this example, we will use a special project translation class to replicate the folder structure as ranges within the manifest.
+
++++
+
+### Generate Manifest with Folder Ranges
+
+![Index by Folder](tutorial-screenshots/IIIFScenarios/Slide5.JPG)
+
++++
+
+### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByFolderName"
+
+Then click "Analyze"...
+
++++
+
+![Screenshot](tutorial-screenshots/fad4.png)
+
+Note the sequence and range information assigned to each image.
+
++++
+
+![Screenshot](tutorial-screenshots/fad4a.png)
+
++++
+
+### Step 2: Preview the results in Universal Viewer
+
++++
+
+Note the file system folder structure present on the left hand side.
+
++++
+
+![Screenshot](tutorial-screenshots/uv4.png)
+
+---
+
+### Generate Manifest with EAD Subject + Folder Ranges
+
+In this example, we will use use an EAD file to build project metadata and project ranges.  
+
++++
+
+### Generate Manifest with EAD Subject + Folder Ranges
+
+![Index by EAD and Folder](tutorial-screenshots/IIIFScenarios/Slide6.JPG)
+
++++
+
+The named folders of images are linked to EAD components by box and folder numbers.
+
++++
+
+### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEAD.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEAD.xml)"
+
+    # Manifest Metadata Input File
+    # - EAD File containing metadata
+    # - CSV File for each input directory of resources
+    # If blank, this property file will be utilized
+    ManifestMetadataInputFile: dogPhotosEAD.xml
+    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
+
++++
+
+### Step 2: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMap"
+
+Then click "Analyze"...
+
++++
+
+![Screenshot](tutorial-screenshots/fad5.png)
+
++++
+
+![Screenshot](tutorial-screenshots/fad5a.png)
+
++++
+
+### Step 3: Preview the results in Universal Viewer
+
+Note the EAD hierarchy and file system folder structure present on the left hand side.
+
++++
+
+![Screenshot](tutorial-screenshots/uv5.png)
+
+---
+
+### Generate Manifest with EAD Subject Ranges
+
+In this example, we will modify the range listing from the prior example with a different project translator.  
+
++++
+
+![Index by EAD](tutorial-screenshots/IIIFScenarios/Slide7.JPG)
+
++++
+
+The named folders of images are linked to EAD components by box and folder numbers.
+
++++
+
+### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMapSubjectsOnly"
+
+Then click "Analyze"...
+
++++
+
+![Screenshot](tutorial-screenshots/fad6.png)
+
++++
+
+### Step 3: Preview the results in Universal Viewer
+
+Note the EAD hierarchy present on the left hand side.
+
++++
+
+![Screenshot](tutorial-screenshots/uv6.png)
+
+---
+
+### Generate Manifest with EAD Subject Ranges and Digital Object References
+
+In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
+
++++
+
+![Index by EAD and DAO](tutorial-screenshots/IIIFScenarios/Slide8.JPG)
+
++++
+
+### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEADWithLinkedDAO.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEADWithLinkedDAO.xml#L135-L145)"
+
++++
+
+    # Manifest Metadata Input File
+    # - EAD File containing metadata
+    # - CSV File for each input directory of resources
+    # If blank, this property file will be utilized
+    #ManifestMetadataInputFile: dogPhotosEAD.xml
+    ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
+
++++
+
+### Step 2: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "EADFolderMapSubjectsOnly"
+
++++
+
+Then click "Analyze"...
+
++++
+
+![Screenshot](tutorial-screenshots/fad7.png)
+
++++
+
+### Step 3: Preview the results in Universal Viewer
+
++++
+
+Note the additional items that have been imported by Digital Object URL in the EAD.
+
++++
+
+![Screenshot](tutorial-screenshots/uv7.png)
+
++++
+
+![Screenshot](tutorial-screenshots/uv7a.png)
