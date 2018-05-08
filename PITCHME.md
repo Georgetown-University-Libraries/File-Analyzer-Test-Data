@@ -190,7 +190,7 @@ The Create Manifest Builder is able to merge item metadata into the manifest fil
 
 ### Generate Manifest with Item Metadata
 
-![Basic Use Case With Metadata](tutorial-screenshots/IIIFScenarios/Slide3.JPG)
+![Basic Use Case With Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide3.JPG)
 
 +++
 
@@ -227,13 +227,13 @@ The application is also designed to support the following non-DSpace specific me
 
 ## Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
 
-![Screenshot](tutorial-screenshots/fa4.png)
+![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
 +++
 
 ## Step 3: Review the results. Note that title information is extacted for each item
 
-![Screenshot](tutorial-screenshots/fad2.png)
+![Screenshot](iiif/tutorial-screenshots/fad2.png)
 
 +++
 
@@ -243,13 +243,14 @@ Note the descriptive metadata in the right-hand panel.
 
 +++
 
-![Screenshot](tutorial-screenshots/uv2.png)
+![Screenshot](iiif/tutorial-screenshots/uv2.png)
 
 +++
 
 Note the descriptive canvas names.
 
-![Screenshot](tutorial-screenshots/uv2a.png)
++++
+![Screenshot](iiif/tutorial-screenshots/uv2a.png)
 
 ---
 
@@ -259,13 +260,15 @@ In this example, we will use a special project translation class to sort the ima
 
 +++
 
-![Index By Date](tutorial-screenshots/IIIFScenarios/Slide4.JPG)
+![Index By Date](iiif/tutorial-screenshots/IIIFScenarios/Slide4.JPG)
 
 +++
 
 ### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByCreationDate"
 
-![Screenshot](tutorial-screenshots/fad3.png)
++++
+
+![Screenshot](iiif/tutorial-screenshots/fad3.png)
 
 +++
 
@@ -273,7 +276,7 @@ Note the sequence and range information assigned to each image.
 
 +++
 
-![Screenshot](tutorial-screenshots/fad3a.png)
+![Screenshot](iiif/tutorial-screenshots/fad3a.png)
 
 +++
 
@@ -283,7 +286,7 @@ Note the date ranges present on the left hand side.
 
 +++
 
-![Screenshot](tutorial-screenshots/uv3.png)
+![Screenshot](iiif/tutorial-screenshots/uv3.png)
 
 --- 
 ### Generate Manifest with Folder Ranges
@@ -294,7 +297,7 @@ In this example, we will use a special project translation class to replicate th
 
 ### Generate Manifest with Folder Ranges
 
-![Index by Folder](tutorial-screenshots/IIIFScenarios/Slide5.JPG)
+![Index by Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide5.JPG)
 
 +++
 
@@ -304,13 +307,13 @@ Then click "Analyze"...
 
 +++
 
-![Screenshot](tutorial-screenshots/fad4.png)
+![Screenshot](iiif/tutorial-screenshots/fad4.png)
 
 Note the sequence and range information assigned to each image.
 
 +++
 
-![Screenshot](tutorial-screenshots/fad4a.png)
+![Screenshot](iiif/tutorial-screenshots/fad4a.png)
 
 +++
 
@@ -322,7 +325,7 @@ Note the file system folder structure present on the left hand side.
 
 +++
 
-![Screenshot](tutorial-screenshots/uv4.png)
+![Screenshot](iiif/tutorial-screenshots/uv4.png)
 
 ---
 
@@ -334,7 +337,7 @@ In this example, we will use use an EAD file to build project metadata and proje
 
 ### Generate Manifest with EAD Subject + Folder Ranges
 
-![Index by EAD and Folder](tutorial-screenshots/IIIFScenarios/Slide6.JPG)
+![Index by EAD and Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide6.JPG)
 
 +++
 
@@ -360,11 +363,11 @@ Then click "Analyze"...
 
 +++
 
-![Screenshot](tutorial-screenshots/fad5.png)
+![Screenshot](iiif/tutorial-screenshots/fad5.png)
 
 +++
 
-![Screenshot](tutorial-screenshots/fad5a.png)
+![Screenshot](iiif/tutorial-screenshots/fad5a.png)
 
 +++
 
@@ -374,7 +377,7 @@ Note the EAD hierarchy and file system folder structure present on the left hand
 
 +++
 
-![Screenshot](tutorial-screenshots/uv5.png)
+![Screenshot](iiif/tutorial-screenshots/uv5.png)
 
 ---
 
@@ -384,7 +387,7 @@ In this example, we will modify the range listing from the prior example with a 
 
 +++
 
-![Index by EAD](tutorial-screenshots/IIIFScenarios/Slide7.JPG)
+![Index by EAD](iiif/tutorial-screenshots/IIIFScenarios/Slide7.JPG)
 
 +++
 
@@ -398,7 +401,7 @@ Then click "Analyze"...
 
 +++
 
-![Screenshot](tutorial-screenshots/fad6.png)
+![Screenshot](iiif/tutorial-screenshots/fad6.png)
 
 +++
 
@@ -408,7 +411,7 @@ Note the EAD hierarchy present on the left hand side.
 
 +++
 
-![Screenshot](tutorial-screenshots/uv6.png)
+![Screenshot](iiif/tutorial-screenshots/uv6.png)
 
 ---
 
@@ -418,7 +421,7 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 +++
 
-![Index by EAD and DAO](tutorial-screenshots/IIIFScenarios/Slide8.JPG)
+![Index by EAD and DAO](iiif/tutorial-screenshots/IIIFScenarios/Slide8.JPG)
 
 +++
 
@@ -444,7 +447,7 @@ Then click "Analyze"...
 
 +++
 
-![Screenshot](tutorial-screenshots/fad7.png)
+![Screenshot](iiif/tutorial-screenshots/fad7.png)
 
 +++
 
@@ -456,8 +459,8 @@ Note the additional items that have been imported by Digital Object URL in the E
 
 +++
 
-![Screenshot](tutorial-screenshots/uv7.png)
+![Screenshot](iiif/tutorial-screenshots/uv7.png)
 
 +++
 
-![Screenshot](tutorial-screenshots/uv7a.png)
+![Screenshot](iiif/tutorial-screenshots/uv7a.png)
