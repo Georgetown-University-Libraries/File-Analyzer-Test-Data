@@ -97,28 +97,29 @@ https://github.com/terrywbrady/info
 
 ---
 
-## Tutorial Demo
+## Manifest Builder Tutorial Demo
 
-@ul
-
-- Basic Manifest
-- Item Metadata
-- Date Ranges
-- Folder Ranges
-- EAD+Folder Ranges
-- EAD Ranges
-- EAD Ranges + DAO's
-- CSV Metadata
-- Collection Manifests
-
-@ulend
-
+[IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 ---
 ### Environment Setup
 
-The slides that follow are available at the following site.  
+@ul
+- Prerequisite Software
+  - IIIF Image Server such as Loris or Cantaloupe to serve 
+  - Web Server (manifests and universal viewer) 
+- Step 1: Install File Analyzer
+- Step 2: Clone File Analyzer Test Data
+  - Review Test Data Directory
+- Step 3: Make a local copy of the Manifest Generator Property 
+- Step 4: Configure the manifestGenerate.prop file for your server
 
-## [IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
+@ulend
+
++++
+
+### Sample Images
+
+![Sample Images Gif](iiif/tutorial-screenshots/sampleImages.gif)
 
 ---
 ### Basic Manifest
@@ -168,7 +169,7 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 +++
 
-## Preview the Manifest in the Universal Viewer
+### Preview the Manifest in the Universal Viewer
 
 +++
 
@@ -190,8 +191,6 @@ The Create Manifest Builder is able to merge item metadata into the manifest fil
 
 +++
 
-### Generate Manifest with Item Metadata
-
 ![Basic Use Case With Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide3.JPG)
 
 +++
@@ -204,6 +203,7 @@ Since this application was built to support content described in DSpace, the fol
 * DSpace AIP export file: mets.xml
 * DSpace REST API 
 
++++
 The application is also designed to support the following non-DSpace specific metadata types
 * CSV File 
 * Embedded metadata within images (future support)
@@ -227,13 +227,17 @@ The application is also designed to support the following non-DSpace specific me
 
 +++
 
-## Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
+### Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
+
++++
 
 ![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
 +++
 
-## Step 3: Review the results. Note that title information is extacted for each item
+### Step 3: Review the results. Note that title information is extacted for each item
+
++++
 
 ![Screenshot](iiif/tutorial-screenshots/fad2.png)
 
@@ -299,6 +303,8 @@ In this example, we will use a special project translation class to replicate th
 
 ### Generate Manifest with Folder Ranges
 
++++
+
 ![Index by Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide5.JPG)
 
 +++
@@ -311,6 +317,7 @@ Then click "Analyze"...
 
 ![Screenshot](iiif/tutorial-screenshots/fad4.png)
 
++++
 Note the sequence and range information assigned to each image.
 
 +++
@@ -339,6 +346,7 @@ In this example, we will use use an EAD file to build project metadata and proje
 
 ### Generate Manifest with EAD Subject + Folder Ranges
 
++++
 ![Index by EAD and Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide6.JPG)
 
 +++
