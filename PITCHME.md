@@ -116,7 +116,9 @@ https://github.com/terrywbrady/info
 ---
 ### Environment Setup
 
-##[Tutorial Pages](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
+The slides that follow are available at the following site.  
+
+## [IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 
 ---
 ### Basic Manifest
@@ -464,3 +466,143 @@ Note the additional items that have been imported by Digital Object URL in the E
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/uv7a.png)
+
+---
+
+### Generate Manifest Metadata from a CSV
+
+In this example, we will use a CSV file to populate manifest metdata.
+
++++
+
+![Use CSV Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide9.JPG)
+
++++
+
+### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[metdata.csv]({{site.src_path}}/iiif/dog-photos/metadata.csv)"
+
+    # Manifest Metadata Input File
+    # - EAD File containing metadata
+    # - CSV File for each input directory of resources
+    # If blank, this property file will be utilized
+    #ManifestMetadataInputFile: dogPhotosEAD.xml
+    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    ManifestMetadataInputFile: metadata.csv
+
++++
+
+### Step 2: In manifestGenerate.prop, set GetItemMetadata to "ManifestMetadataFile"
+
+    # Get Item Metadata
+    # - ItemMetadataFile - extract metadata from a file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
+    # - RESTAPI - extract metadata using the DSpace REST API
+    # - None - no metadata file exists
+    #GetItemMetadata: RESTAPI
+    #GetItemMetadata: None
+    #GetItemMetadata: ItemMetadataFile
+    GetItemMetadata: ManifestMetadataFile
+
++++
+
+### Step 3: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "Default"
+
++++
+
+Then click "Analyze"...
+
++++
+
+### Step 4: Preview the results in Universal Viewer
+
+Note that the metadata was pulled from the CSV file (using the filename as a matching key)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv8.png)
+
+---
+
+### Generate a Collection Manifest
+
+In this example, we will generate a collection of manifests (one per each top level folder).
+
++++
+
+![Collection Manifest](iiif/tutorial-screenshots/IIIFScenarios/Slide10.JPG)
+
++++
+
+### Step 1: In manifestGenerate.prop, set CreateCollectionManifest to "ManyItemsPerFolder"
+
+    # Create Collection Manifest - An individual manifest will be generated for each subfolder 
+    # and registered in a collection level manifest
+    #  - NoCollection: No collection manifest will be created (default)
+    #  - OneItemPerFolder: Only one item per folder, use item name for folder name
+    #  - ManyItemsPerFolder: Many items will exist per folder
+    #CreateCollectionManifest: NoCollection
+    #CreateCollectionManifest: OneItemPerFolder
+    CreateCollectionManifest: ManyItemsPerFolder
+
++++
+
+### Step 2: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
+
+    # Get Item Metadata
+    # - ItemMetadataFile - extract metadata from a file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
+    # - RESTAPI - extract metadata using the DSpace REST API
+    # - None - no metadata file exists
+    #GetItemMetadata: RESTAPI
+    #GetItemMetadata: None
+    GetItemMetadata: ItemMetadataFile
+    #GetItemMetadata: ManifestMetadataFile
+
++++
+
+### Step 3: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "Default"
+
+Then click "Analyze"...
+
++++
+
+### Step 4: Preview the results in Universal Viewer
+
+Note that the images have been broken into individual manifests for each box.
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv9a.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv9b.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv9c.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv9d.png)
+
+---
+
+### Try it Yourself
+
+Give the [tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/) and let me know your results
+
+Terry Brady
+
+Georgetown University Library
+
+https://github.com/terrywbrady/info
+
+![](https://www.library.georgetown.edu/sites/default/files/library-logo.png)
+
