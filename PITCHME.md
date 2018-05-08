@@ -101,25 +101,29 @@ https://github.com/terrywbrady/info
 
 [IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 ---
-### Environment Setup
+### Prerequisite Software
+- IIIF Image Server such as Loris or Cantaloupe to serve 
+- Web Server (manifests and universal viewer) 
 
-@ul
-- Prerequisite Software
-  - IIIF Image Server such as Loris or Cantaloupe to serve 
-  - Web Server (manifests and universal viewer) 
-- Step 1: Install File Analyzer
-- Step 2: Clone File Analyzer Test Data
-  - Review Test Data Directory
-- Step 3: Make a local copy of the Manifest Generator Property 
-- Step 4: Configure the manifestGenerate.prop file for your server
++++
 
-@ulend
+### Clone Repositories
+
+- Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
+- Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
 
 +++
 
 ### Sample Images
 
 ![Sample Images Gif](iiif/tutorial-screenshots/sampleImages.gif)
+
++++
+
+### Configure Application for Your Local Environment
+- Make a local copy of the Manifest Generator Property 
+- Configure the manifestGenerate.prop file for your server
+
 
 ---
 ### Basic Manifest
