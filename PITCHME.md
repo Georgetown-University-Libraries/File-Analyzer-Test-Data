@@ -133,7 +133,10 @@ https://github.com/terrywbrady/info
     #CreateCollectionManifest: NoCollection
     #CreateCollectionManifest: OneItemPerFolder
     #CreateCollectionManifest: ManyItemsPerFolder
-
+@[6](On manifest will be created - no collections)
+@[7](All assets in a folder will share item metadata)
+@[8](Each asset in a folder will have distinct metadata)
+   
 +++
 
 ### 2Page view Setting
@@ -166,6 +169,10 @@ https://github.com/terrywbrady/info
     #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
     #ManifestMetadataInputFile: metadata.csv
 
+@[5](No master metadata file)
+@[6-7](EAD XML file containing metadata)
+@[8](CSV file containing metadata for multiple items)
+
 +++
 
 ### Global metadata fields
@@ -193,6 +200,10 @@ https://github.com/terrywbrady/info
     #GetItemIdentifier: FolderName
     GetItemIdentifier: FileName
 
+@[7](Item identifier will be defined in a metadata file associated with an image asset)
+@[8](Item identifier will be derived from the name of the folder containing an image asset)
+@[9](Item identifier will be derived from the file name of the image asset)
+
 
 +++
 
@@ -210,6 +221,11 @@ https://github.com/terrywbrady/info
     GetItemMetadata: None
     #GetItemMetadata: ItemMetadataFile
     #GetItemMetadata: ManifestMetadataFile 
+
+@[9](Descriptive metadata will be pulled from the DSpace REST API)
+@[10](Descriptive metadata will not exist for each asset)
+@[11](Descriptive metadata will be pulled from an item specific metadata file)
+@[12](Descriptive metadata will be pulled from a a global file applying to all assets)
 
 +++
 
