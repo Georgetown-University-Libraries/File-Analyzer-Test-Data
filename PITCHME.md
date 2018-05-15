@@ -135,7 +135,7 @@ https://github.com/terrywbrady/info
     #CreateCollectionManifest: ManyItemsPerFolder
 @[6](On manifest will be created - no collections)
 @[7](All assets in a folder will share item metadata)
-@[8](Each asset in a folder will have distinct metadata)
+@[8](Each asset in a folder may have distinct metadata)
    
 +++
 
@@ -158,8 +158,7 @@ https://github.com/terrywbrady/info
 
 ### Global metadata file - applies to all items
 
-# Manifest Metadata 
-
+    # Manifest Metadata 
     # Manifest Metadata Input File
     # - EAD File containing metadata
     # - CSV File for each input directory of resources
@@ -169,9 +168,9 @@ https://github.com/terrywbrady/info
     #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
     #ManifestMetadataInputFile: metadata.csv
 
-@[5](No master metadata file)
-@[6-7](EAD XML file containing metadata)
-@[8](CSV file containing metadata for multiple items)
+@[6](No master metadata file)
+@[7-8](EAD XML file containing metadata)
+@[9](CSV file containing metadata for multiple items)
 
 +++
 
