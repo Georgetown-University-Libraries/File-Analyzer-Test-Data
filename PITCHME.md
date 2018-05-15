@@ -79,21 +79,153 @@ https://github.com/terrywbrady/info
 
 @ulend
 
-+++?code=iiif/dog-photos/manifestGenerate.template.prop&lang=ini
-@[1-2](URL Prefix for image resources)
-@[4-5](Component manifest file prefix)
-@[7-11](Manifest output directory)
-@[13-15](Manifest output file name)
-@[20-24](Directory Separator for subfolders of image assets)
-@[26-33](Collection manifest configuration)
-@[35-38](2Page view)
-@[40-42](Manifest Logo)
-@[44-51](Global metadata file - applies to all items)
-@[53-60](Global metadata fields)
-@[62-70](Item Identifier Calculation)
-@[72-83](Item Metadata Location)
-@[85-89](Conversion class name - references a java enum class name)
-#### Manifest Prop File Overview
++++
+
+### URL Prefix for Image Resources
+
+    # URL Prefix to prepend to IIIF resource URL's for this project
+    IIIFRoot: https://YOUR-IMAGE-SERVER-URL/project-path
+
++++
+
+### URL Prefix for Manifests within a Collection Manifest
+
+    # URL Prefix to prepend to manifests in a collection manifest
+    # ManifestRoot: https://YOUR-IMAGE-SERVER-URL/manifest-path
+
++++
+
+### Manifest Output Directory
+
+    # Manifest Output Directory
+    # If blank, the current dir will be used
+    # Enter the path as a linux style path even for windows
+    #   \\server\share\path --> //server/share/path
+    ManifestOuputDir: //YOUR-SERVER-PATH/IIIF/manifests
+
++++
+
+### Manifest Output File Name
+
+    # Manifest Output File
+    # Name of the top level manifest file that will be generated
+    ManifestOuputFile: dog-photos.json
+
++++
+
+### Directory Separator for subfolders of image assets
+
+    # IIIF Directory Separator.
+    #  - "/" (default)
+    #  - "%2F" may be needed for Cantaloupe Server.
+    #DirectorySeparator: /
+    DirectorySeparator: %2F
+
++++
+
+### Collection manifest configuration
+
+    # Create Collection Manifest - An individual manifest will be generated for each subfolder 
+    # and registered in a collection level manifest
+    #  - NoCollection: No collection manifest will be created (default)
+    #  - OneItemPerFolder: Only one item per folder, use item name for folder name
+    #  - ManyItemsPerFolder: Many items will exist per folder
+    #CreateCollectionManifest: NoCollection
+    #CreateCollectionManifest: OneItemPerFolder
+    #CreateCollectionManifest: ManyItemsPerFolder
+
++++
+
+### 2Page view Setting
+
+    # Set2PageView
+    #  - false: do not enable 2 page view (default)
+    #  - true: enable 2 page view
+    #Set2PageView: true
+
++++
+
+### Manifest Logo
+
+    # Manifest Logo URL
+    # URL to a logo image to embed within the manifest
+    ManifestLogoURL: 
+
++++
+
+### Global metadata file - applies to all items
+
+# Manifest Metadata 
+
+    # Manifest Metadata Input File
+    # - EAD File containing metadata
+    # - CSV File for each input directory of resources
+    # If blank, this property file will be utilized
+    #ManifestMetadataInputFile: 
+    #ManifestMetadataInputFile: dogPhotosEAD.xml
+    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
+
++++
+
+### Global metadata fields
+
+    # Manifest Metadata 
+    # - If not defined in another external metadata file
+    Title: Sample Manifest File with Dog Photos 
+    Attribution: Sample file illustrating File Analyzer functionality
+    DateCreated: 2017-12-12
+    Creator: Terry Brady, Georgetown University Library
+    #Description:
+    #Rights: 
+
++++
+
+###  Item Identifier Calculation
+
+    # Get Item Identifier
+    # - ItemMetadataFile - extract metadata from an item-specific file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - FolderName - folder name contains item identifier
+    # - FileName - file name contains item identifier
+    #GetItemIdentifer: ItemMetadataFile
+    #GetItemIdentifier: FolderName
+    GetItemIdentifier: FileName
+
+
++++
+
+### Item Metadata Location
+
+    # Get Item Metadata
+    # - ItemMetadataFile - extract metadata from a file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
+    # - RESTAPI - extract metadata using the DSpace REST API
+    # - None - no metadata file exists
+    #GetItemMetadata: RESTAPI
+    GetItemMetadata: None
+    #GetItemMetadata: ItemMetadataFile
+    #GetItemMetadata: ManifestMetadataFile 
+
++++
+
+### Conversion class name - references a java enum class name
+
+    # Manifest Project
+    # Name of the Manifest Project (in code) class that will provide custom translation.
+    # If blank, a default value will be assigned.
+    # The class should be the name of an Enum that implements ManifestProjectTranslateEnum
+    #ManifestProject: 
+
++++
+
+### Looking For Feedback
+
+- What use cases are missing from this model?
 
 ---
 
