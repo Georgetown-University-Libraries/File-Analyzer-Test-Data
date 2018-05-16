@@ -261,15 +261,33 @@ https://github.com/terrywbrady/info
 
 +++
 
-### Sample Images
+### Sample Images Listing
 
-![Sample Images Gif](iiif/tutorial-screenshots/sampleImages.gif)
+    ./dog-photos-linked-dao/car.jpg
+    ./dog-photos-linked-dao/yawn.jpg
+    ./dog-photos/box_01/2006/IMG_0063.jpg
+    ./dog-photos/box_01/2010/IMG_1063.jpg
+    ./dog-photos/box_01/2010/dog1.jpg
+    ./dog-photos/box_01/2013/IMG_3999.jpg
+    ./dog-photos/box_01/2015/IMG_2159.jpg
+    ./dog-photos/box_02/2006/IMG_1448.jpg
+    ./dog-photos/box_02/2009/IMG_0168.jpg
+    ./dog-photos/box_02/2014/IMG_5534.jpg
+    ./dog-photos/box_02/2015/IMG_3749.jpg
+    ./dog-photos/box_03/2009/IMG_0941.jpg
+    ./dog-photos/box_03/2014/IMG_4970.jpg
+    ./dog-photos/box_03/2017/IMG_0908.jpg
+    ./dog-photos/box_04/2006/IMG_1800.jpg
+    ./dog-photos/box_04/2009/IMG_0204.jpg
+    ./dog-photos/box_04/2013/IMG_4591.jpg
+    ./dog-photos/box_04/2015/IMG_5032.jpg
+    ./dog-photos/box_04/2016/IMG_9030.jpg
 
 +++
 
-### Sample Images Listing
+### Sample Images
 
-![Sample Images Gif](iiif/tutorial-screenshots/iiifFileList.png)
+![Sample Images Gif](iiif/tutorial-screenshots/sampleImages.gif)
 
 +++
 
@@ -293,11 +311,19 @@ https://github.com/terrywbrady/info
 
 +++
 
+![Screenshot](iiif/tutorial-screenshots/fa1.z.png)
+
++++
+
 ### Set "Root Directory" to the dog-photos directory
 
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/fa2.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/fa2.z.png)
 
 +++
 
@@ -310,6 +336,10 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 +++
 
+![Screenshot](iiif/tutorial-screenshots/fa3.z.png)
+
++++
+
 ### Click "Analyze"
 
 +++
@@ -318,11 +348,19 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 +++
 
+![Screenshot](iiif/tutorial-screenshots/fa4.z.png)
+
++++
+
 ### The results will display in a table describing the items found
 
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/fa5.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/fa5.z.png)
 
 +++
 
@@ -397,6 +435,10 @@ The application is also designed to support the following non-DSpace specific me
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/fad2.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/fad2.z.png)
 
 +++
 
