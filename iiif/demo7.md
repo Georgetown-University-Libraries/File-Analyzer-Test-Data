@@ -20,7 +20,7 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 Then click "Analyze"...
 
-![Screenshot](tutorial-screenshots/fad7.png)
+![Screenshot](tutorial-screenshots/fad6.png)
 
 ## Step 3: Preview the results in Universal Viewer
 
