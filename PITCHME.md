@@ -543,7 +543,7 @@ Note the sequence and range information assigned to each image.
 
 ---
 
-### Manifest with EAD Subject + Folder Ranges
+### With EAD Subject + Folder Ranges
 
 ![Index by EAD and Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide6.JPG)
 
@@ -579,19 +579,19 @@ Note the sequence and range information assigned to each image.
 @[13](Box directory name is matched to the container label)
 @[14](Folder directory name is matched to the container label range)
 
++++ 
+
 ### UpdatemanifestGenerate.prop
 
 - Set ManifestMetadataInputFile to 
   - dogPhotosEAD.xml
 
-   # Manifest Metadata Input File
-    ManifestMetadataInputFile: dogPhotosEAD.xml
-
 +++
 
-### Step 2: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMap"
+### In File Analyzer - File Test Properties
 
-Then click "Analyze"...
+- Set Project Value Translator to 
+  - "EADFolderMap"
 
 +++
 
@@ -611,7 +611,7 @@ Then click "Analyze"...
 
 +++
 
-### Step 3: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
 Note the EAD hierarchy and file system folder structure present on the left hand side.
 
@@ -625,23 +625,20 @@ Note the EAD hierarchy and file system folder structure present on the left hand
 
 ---
 
-### Generate Manifest with EAD Subject Ranges
-
-In this example, we will modify the range listing from the prior example with a different project translator.  
-
-+++
+### Manifest with EAD Subject Ranges
 
 ![Index by EAD](iiif/tutorial-screenshots/IIIFScenarios/Slide7.JPG)
 
 +++
 
-The named folders of images are linked to EAD components by box and folder numbers.
+This translator assumes that all input folders have been matched to EAD containers
 
 +++
 
-### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "EADFolderMapSubjectsOnly"
+### In File Analyzer - File Test Properties
 
-Then click "Analyze"...
+- Set Project Value Translator to 
+  - "EADFolderMapSubjectsOnly"
 
 +++
 
@@ -653,7 +650,7 @@ Then click "Analyze"...
 
 +++
 
-### Step 3: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
 Note the EAD hierarchy present on the left hand side.
 
@@ -663,30 +660,62 @@ Note the EAD hierarchy present on the left hand side.
 
 ---
 
-### Generate Manifest with EAD Subject Ranges and Digital Object References
-
-In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
-
-+++
+### With EAD Subject Ranges and Digital Object Refs
 
 ![Index by EAD and DAO](iiif/tutorial-screenshots/IIIFScenarios/Slide8.JPG)
 
 +++
 
-### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEADWithLinkedDAO.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEADWithLinkedDAO.xml#L135-L145)"
+In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
 
 +++
+
+### Sample EAD - dogPhotosEADWithLinkedDAO.xml
+
+            <c01 id="ref4a" level="file">
+                <did>
+                    <unittitle>Dog Photos Linked by DAO</unittitle>
+                    <container id="cid395005a" type="Box" label="Text">5</container>
+                    <container parent="cid395005a" type="Folder">2000-2020</container>
+                </did>
+                <c02 id="ref4b" level="file">
+                    <did>
+                        <unittitle>Other Misc Photos</unittitle>
+                        <container id="cid395005b" type="Box" label="Text">5</container>
+                        <container parent="cid395005b" type="Folder">2000-2020</container>
+                    </did>
+                    <!-- "IIIFRoot" will be replaced with IIIFRoot -->
+                    <dao ns2:href="IIIFRoot-linked-dao/yawn.jpg">
+                        <daodesc>
+                            <p>Lily Yawning</p>
+                        </daodesc>
+                    </dao>
+                    <dao ns2:href="IIIFRoot-linked-dao/car.jpg">
+                        <daodesc>
+                            <p>Lily In a Car</p>
+                        </daodesc>
+                    </dao>                
+
+@[1-6](Index entry for DAO inclusions0 
+@[14-18](DAO reference) 
+@[19-23](DAO reference)
+ 
++++
+
+### UpdatemanifestGenerate.prop
+
+- Set ManifestMetadataInputFile to 
+  - dogPhotosEADWithLinkedDAO.xml
 
     # Manifest Metadata Input File
     ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
 
 +++
 
-### Step 2: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "EADFolderMapSubjectsOnly"
+### In File Analyzer - File Test Properties
 
-+++
-
-Then click "Analyze"...
+- Set Project Value Translator to 
+  - "EADFolderMapSubjectsOnly"
 
 +++
 
@@ -698,11 +727,9 @@ Then click "Analyze"...
 
 +++
 
-### Step 3: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
-+++
-
-Note the additional items that have been imported by Digital Object URL in the EAD.
+- Note the additional items that have been imported by Digital Object URL in the EAD.
 
 +++
 
@@ -722,39 +749,58 @@ Note the additional items that have been imported by Digital Object URL in the E
 
 ---
 
-### Generate Manifest Metadata from a CSV
-
-In this example, we will use a CSV file to populate manifest metdata.
-
-+++
+### Manifest Metadata from a CSV
 
 ![Use CSV Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide9.JPG)
 
 +++
 
-### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[metdata.csv]({{site.src_path}}/iiif/dog-photos/metadata.csv)"
+### Sample CSV: metadata.csv
 
-    # Manifest Metadata Input File
-    ManifestMetadataInputFile: metadata.csv
+    "Key",dc.title,dc.date.created
+    "IMG_0063.jpg","Title A",2006
+    "IMG_1063.jpg","Title B",2010
+    "dog1.jpg","Title C",2010
+    "IMG_3999.jpg","Title D",2013
+    "IMG_2159.jpg","Title E",2015
+    "IMG_1448.jpg","Title F",2006
+    "IMG_0168.jpg","Title G",2009
+    "IMG_5534.jpg","Title H",2014
+    "IMG_3749.jpg","Title I",2015
+    "IMG_0941.jpg","Title J",2009
+    "IMG_4970.jpg","Title K",2014
+    "IMG_0908.jpg","Title L",2017
+    "IMG_1800.jpg","Title M",2006
+    "IMG_0204.jpg","Title N",2009
+    "IMG_4591.jpg","Title O",2013
+    "IMG_5032.jpg","Title P",2015
+    "IMG_9030.jpg","Title Q",2016
 
 +++
 
-### Step 2: In manifestGenerate.prop, set GetItemMetadata to "ManifestMetadataFile"
+### UpdatemanifestGenerate.prop
+
+- Set ManifestMetadataInputFile to 
+  - metadata.csv
+- Set GetItemMetadata to 
+  - "ManifestMetadataFile"
+
+    # Manifest Metadata Input File
+    ManifestMetadataInputFile: metadata.csv
 
     # Get Item Metadata
     GetItemMetadata: ManifestMetadataFile
 
 +++
 
-### Step 3: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "Default"
+### In File Analyzer - File Test Properties
+
+- Set Project Value Translator to 
+  - "Default"
 
 +++
 
-Then click "Analyze"...
-
-+++
-
-### Step 4: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
 Note that the metadata was pulled from the CSV file (using the filename as a matching key)
 
@@ -770,31 +816,29 @@ Note that the metadata was pulled from the CSV file (using the filename as a mat
 
 ### Generate a Collection Manifest
 
-In this example, we will generate a collection of manifests (one per each top level folder).
-
-+++
-
 ![Collection Manifest](iiif/tutorial-screenshots/IIIFScenarios/Slide10.JPG)
 
 +++
 
-### Step 1: In manifestGenerate.prop, set CreateCollectionManifest to "ManyItemsPerFolder"
+### UpdatemanifestGenerate.prop
+
+- Set CreateCollectionManifest to 
+  - ManyItemsPerFolder
+- Set GetItemMetadata to 
+  - "ItemMetadataFile"
 
     # Create Collection Manifest - An individual manifest will be generated for each subfolder 
     CreateCollectionManifest: ManyItemsPerFolder
-
-+++
-
-### Step 2: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
 
     # Get Item Metadata
     GetItemMetadata: ItemMetadataFile
 
 +++
 
-### Step 3: On the "File Test Properties" tab of "Criteria" tab, set the Project Value Translator to "ByItemFolderName"
+### In File Analyzer - File Test Properties
 
-Then click "Analyze"...
+- Set Project Value Translator to 
+  - "ByItemFolderName"
 
 +++
 
