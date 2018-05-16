@@ -283,11 +283,12 @@ https://github.com/terrywbrady/info
     ./dog-photos/box_04/2015/IMG_5032.jpg
     ./dog-photos/box_04/2016/IMG_9030.jpg
 
-+++
-
-### Sample Images
-
-![Sample Images Gif](iiif/tutorial-screenshots/sampleImages.gif)
+@[3-7](Box 1 files)
+@[4-5](Box 1 files from 2010)
+@[8-11](Box 2 files)
+@[12-14](Box 3 files)
+@[15-19](Box 4 files)
+@[1-2](These files will be handled separately)
 
 +++
 
@@ -297,13 +298,16 @@ https://github.com/terrywbrady/info
 
 
 ---
-### Basic Manifest
+#### Basic Manifest
 
 ![Basic Use Case](iiif/tutorial-screenshots/IIIFScenarios/Slide2.JPG)
 
 +++
 
-### Select "Create IIIF Manifest" from the dropdown on the "Criteria" panel
+### File Analyzer - Criteria
+
+- File Test Name
+  - "Create IIIF Manifest"
 
 +++
 
@@ -315,7 +319,10 @@ https://github.com/terrywbrady/info
 
 +++
 
-### Set "Root Directory" to the dog-photos directory
+### File Analyzer - Root Directory
+
+- Set Root Directory to 
+  - iiif/dog-photos
 
 +++
 
@@ -327,8 +334,11 @@ https://github.com/terrywbrady/info
 
 +++
 
-### On the "File Test Properties Tab", note the options that exist. 
-The "Manifest Generate Property Filename" should match the name of the file that you modified.
+### File Analyzer - Properties 
+
+- Manifest Generate Property Filename
+  - manifestGenerate.prop
+  - this is the name of the file that we edited
 
 +++
 
@@ -337,10 +347,6 @@ The "Manifest Generate Property Filename" should match the name of the file that
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/fa3.z.png)
-
-+++
-
-### Click "Analyze"
 
 +++
 
@@ -362,13 +368,11 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 ### Preview the Manifest in the Universal Viewer
 
+Note that the image filenames are used as canvas labels.
+
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/uv1.png)
-
-+++
-
-Note that the image filenames are used as canvas labels.
 
 +++
 
@@ -376,11 +380,7 @@ Note that the image filenames are used as canvas labels.
 
 ---
 
-### Generate Manifest with Item Metadata
-
-The Create Manifest Builder is able to merge item metadata into the manifest file as it is being generated.  
-
-+++
+###  Manifest with Item Metadata
 
 ![Basic Use Case With Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide3.JPG)
 
@@ -388,20 +388,19 @@ The Create Manifest Builder is able to merge item metadata into the manifest fil
 
 ### Metadata Support
 
-Since this application was built to support content described in DSpace, the following metadata formats are supported.
-
-* DSpace metadata input file: dublin_core.xml
-* DSpace AIP export file: mets.xml
-* DSpace REST API 
-
-+++
-The application is also designed to support the following non-DSpace specific metadata types
-* CSV File 
-* Embedded metadata within images (future support)
+- DSpace Supported metadata files.
+  - DSpace metadata input file: dublin_core.xml
+  - DSpace AIP export file: mets.xml
+  - DSpace REST API
+- Other formats
+  - CSV
+  - EAD XML 
 
 +++
 
-## Step 1: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
+### UpdatemanifestGenerate.prop
+
+Set GetItemMetadata to "ItemMetadataFile"
 
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file
@@ -409,7 +408,7 @@ The application is also designed to support the following non-DSpace specific me
 
 +++
 
-### Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
+### Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
 
 +++
 
@@ -417,7 +416,7 @@ The application is also designed to support the following non-DSpace specific me
 
 +++
 
-### Step 3: Review the results. Note that title information is extacted for each item
+Review the results. Note that title information is extracted for each item
 
 +++
 
@@ -429,9 +428,10 @@ The application is also designed to support the following non-DSpace specific me
 
 +++
 
-## Step 4: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
-Note the descriptive metadata in the right-hand panel.
+- Note the descriptive metadata in the right-hand panel.
+- Note the descriptive canvas names.
 
 +++
 
@@ -443,10 +443,6 @@ Note the descriptive metadata in the right-hand panel.
 
 +++
 
-Note the descriptive canvas names.
-
-+++
-
 ![Screenshot](iiif/tutorial-screenshots/uv2a.png)
 
 +++
@@ -455,17 +451,16 @@ Note the descriptive canvas names.
 
 ---
 
-### Generate Manifest with Date Ranges
-
-In this example, we will use a special project translation class to sort the images by date created and then generate date ranges for each of the images.
-
-+++
+### Manifest with Date Ranges
 
 ![Index By Date](iiif/tutorial-screenshots/IIIFScenarios/Slide4.JPG)
 
 +++
 
-### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByCreationDate"
+### In File Analyzer - File Test Properties
+
+- Set Project Value Translator to 
+  - "ByCreationDate"
 
 +++
 
@@ -489,7 +484,7 @@ Note the sequence and range information assigned to each image.
 
 +++
 
-### Step 2: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
 Note the date ranges present on the left hand side.
 
@@ -502,23 +497,16 @@ Note the date ranges present on the left hand side.
 ![Screenshot](iiif/tutorial-screenshots/uv3.z.png)
 
 --- 
-### Generate Manifest with Folder Ranges
-
-In this example, we will use a special project translation class to replicate the folder structure as ranges within the manifest.
-
-+++
-
-### Generate Manifest with Folder Ranges
-
-+++
+### Manifest with Folder Ranges
 
 ![Index by Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide5.JPG)
 
 +++
 
-### Step 1: On the "File Test Properties" tab of "Criteria" tab, set Project Value Translator to "ByFolderName"
+### In File Analyzer - File Test Properties
 
-Then click "Analyze"...
+- Set Project Value Translator to 
+  - "ByFolderName"
 
 +++
 
@@ -541,11 +529,9 @@ Note the sequence and range information assigned to each image.
 
 +++
 
-### Step 2: Preview the results in Universal Viewer
+### Preview the results in Universal Viewer
 
-+++
-
-Note the file system folder structure present on the left hand side.
+- Note the file system folder structure present on the left hand side.
 
 +++
 
@@ -557,26 +543,48 @@ Note the file system folder structure present on the left hand side.
 
 ---
 
-### Generate Manifest with EAD Subject + Folder Ranges
+### Manifest with EAD Subject + Folder Ranges
 
-In this example, we will use use an EAD file to build project metadata and project ranges.  
-
-+++
-
-### Generate Manifest with EAD Subject + Folder Ranges
-
-+++
 ![Index by EAD and Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide6.JPG)
 
 +++
 
-The named folders of images are linked to EAD components by box and folder numbers.
+- The named folders of images are linked to EAD components by box and folder numbers.
+- Each folder is also added to the index in case it is not matched in the EAD
 
 +++
 
-### Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEAD.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEAD.xml)"
+### Sample EAD - dogPhotosEAD.xml
 
-    # Manifest Metadata Input File
+        <dsc>
+            <c01 id="ref0" level="series">
+                <did>
+                    <unittitle>Sample Dog Photos</unittitle>
+                </did>
+                <c02 id="ref1" level="file">
+                    <did>
+                        <unittitle>Dog Outside</unittitle>
+                    </did>
+                    <c03 id="ref1y" level="file">
+                        <did>
+                            <unittitle>Young Dog</unittitle>
+                            <container id="cid395001y" type="Box" label="Text">1</container>
+                            <container parent="cid395001y" type="Folder">2000-2009</container>
+@[2-5](Level 1)
+@[4](Level 1 Title)
+@[6-9](Level 2)
+@[8](Level 2 Title)
+@[10-14](Level 3)
+@[12](Level 3 Title)
+@[13](Box directory name is matched to the container label)
+@[14](Folder directory name is matched to the container label range)
+
+### UpdatemanifestGenerate.prop
+
+- Set ManifestMetadataInputFile to 
+  - dogPhotosEAD.xml
+
+   # Manifest Metadata Input File
     ManifestMetadataInputFile: dogPhotosEAD.xml
 
 +++

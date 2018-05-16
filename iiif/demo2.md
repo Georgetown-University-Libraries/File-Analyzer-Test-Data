@@ -25,7 +25,7 @@ The application is also designed to support the following non-DSpace specific me
 
 ![Screenshot](tutorial-screenshots/fa4.png)
 
-## Step 3: Review the results. Note that title information is extacted for each item
+## Step 3: Review the results. Note that title information is extracted for each item
 
 ![Screenshot](tutorial-screenshots/fad2.png)
 
