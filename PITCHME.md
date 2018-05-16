@@ -556,20 +556,21 @@ Note the sequence and range information assigned to each image.
 
 ### Sample EAD - dogPhotosEAD.xml
 
-        <dsc>
-            <c01 id="ref0" level="series">
-                <did>
-                    <unittitle>Sample Dog Photos</unittitle>
-                </did>
-                <c02 id="ref1" level="file">
-                    <did>
-                        <unittitle>Dog Outside</unittitle>
-                    </did>
-                    <c03 id="ref1y" level="file">
-                        <did>
-                            <unittitle>Young Dog</unittitle>
-                            <container id="cid395001y" type="Box" label="Text">1</container>
-                            <container parent="cid395001y" type="Folder">2000-2009</container>
+    <dsc>
+      <c01 id="ref0" level="series">
+        <did>
+          <unittitle>Sample Dog Photos</unittitle>
+        </did>
+        <c02 id="ref1" level="file">
+          <did>
+            <unittitle>Dog Outside</unittitle>
+          </did>
+          <c03 id="ref1y" level="file">
+            <did>
+              <unittitle>Young Dog</unittitle>
+              <container id="cid395001y" type="Box" label="Text">1</container>
+              <container parent="cid395001y" type="Folder">2000-2009</container>
+              
 @[2-5](Level 1)
 @[4](Level 1 Title)
 @[6-9](Level 2)
@@ -672,29 +673,29 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 ### Sample EAD - dogPhotosEADWithLinkedDAO.xml
 
-            <c01 id="ref4a" level="file">
-                <did>
-                    <unittitle>Dog Photos Linked by DAO</unittitle>
-                    <container id="cid395005a" type="Box" label="Text">5</container>
-                    <container parent="cid395005a" type="Folder">2000-2020</container>
-                </did>
-                <c02 id="ref4b" level="file">
-                    <did>
-                        <unittitle>Other Misc Photos</unittitle>
-                        <container id="cid395005b" type="Box" label="Text">5</container>
-                        <container parent="cid395005b" type="Folder">2000-2020</container>
-                    </did>
-                    <!-- "IIIFRoot" will be replaced with IIIFRoot -->
-                    <dao ns2:href="IIIFRoot-linked-dao/yawn.jpg">
-                        <daodesc>
-                            <p>Lily Yawning</p>
-                        </daodesc>
-                    </dao>
-                    <dao ns2:href="IIIFRoot-linked-dao/car.jpg">
-                        <daodesc>
-                            <p>Lily In a Car</p>
-                        </daodesc>
-                    </dao>                
+    <c01 id="ref4a" level="file">
+      <did>
+        <unittitle>Dog Photos Linked by DAO</unittitle>
+        <container id="cid395005a" type="Box" label="Text">5</container>
+        <container parent="cid395005a" type="Folder">2000-2020</container>
+      </did>
+    <c02 id="ref4b" level="file">
+      <did>
+        <unittitle>Other Misc Photos</unittitle>
+        <container id="cid395005b" type="Box" label="Text">5</container>
+        <container parent="cid395005b" type="Folder">2000-2020</container>
+      </did>
+      <!-- "IIIFRoot" will be replaced with IIIFRoot -->
+      <dao ns2:href="IIIFRoot-linked-dao/yawn.jpg">
+        <daodesc>
+          <p>Lily Yawning</p>
+        </daodesc>
+      </dao>
+      <dao ns2:href="IIIFRoot-linked-dao/car.jpg">
+        <daodesc>
+          <p>Lily In a Car</p>
+        </daodesc>
+      </dao>                
 
 @[1-6](Index entry for DAO inclusions0 
 @[14-18](DAO reference) 
