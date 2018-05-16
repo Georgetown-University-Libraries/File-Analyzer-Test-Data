@@ -796,7 +796,7 @@ Note that the images have been broken into individual manifests for each box.
 
 +++
 
-![Screenshot](tutorial-screenshots/uv9collection.gif)
+![Screenshot](iiif/tutorial-screenshots/uv9collection.gif)
 
 ---
 
