@@ -400,11 +400,11 @@ Note that the image filenames are used as canvas labels.
 
 ### UpdatemanifestGenerate.prop
 
-Set GetItemMetadata to "ItemMetadataFile"
-
+```
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file
     GetItemMetadata: ItemMetadataFile
+```
 
 +++
 
@@ -554,7 +554,7 @@ Note the sequence and range information assigned to each image.
 
 +++
 
-### Sample EAD - dogPhotosEAD.xml
+### Sample EAD 
 
     <dsc>
       <c01 id="ref0" level="series">
@@ -582,10 +582,12 @@ Note the sequence and range information assigned to each image.
 
 +++ 
 
-### UpdatemanifestGenerate.prop
+### Update manifestGenerate.prop
 
-- Set ManifestMetadataInputFile to 
-  - dogPhotosEAD.xml
+```
+    # Manifest Metadata Input File
+    ManifestMetadataInputFile: dogPhotosEAD.xml
+```
 
 +++
 
@@ -661,7 +663,7 @@ Note the EAD hierarchy present on the left hand side.
 
 ---
 
-### With EAD Subject Ranges and Digital Object Refs
+### With EAD + Digital Object Refs
 
 ![Index by EAD and DAO](iiif/tutorial-screenshots/IIIFScenarios/Slide8.JPG)
 
@@ -671,7 +673,7 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 +++
 
-### Sample EAD - dogPhotosEADWithLinkedDAO.xml
+### Sample EAD with DAO
 
     <c01 id="ref4a" level="file">
       <did>
@@ -703,13 +705,12 @@ In this example, we will also include digital objects (DAO's) defined within the
  
 +++
 
-### UpdatemanifestGenerate.prop
+### Update manifestGenerate.prop
 
-- Set ManifestMetadataInputFile to 
-  - dogPhotosEADWithLinkedDAO.xml
-
+```
     # Manifest Metadata Input File
     ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+```
 
 +++
 
@@ -779,18 +780,17 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 +++
 
-### UpdatemanifestGenerate.prop
+### Update manifestGenerate.prop
 
-- Set ManifestMetadataInputFile to 
-  - metadata.csv
-- Set GetItemMetadata to 
-  - "ManifestMetadataFile"
-
+```
     # Manifest Metadata Input File
     ManifestMetadataInputFile: metadata.csv
+```
 
+```
     # Get Item Metadata
     GetItemMetadata: ManifestMetadataFile
+```
 
 +++
 
@@ -821,19 +821,17 @@ Note that the metadata was pulled from the CSV file (using the filename as a mat
 
 +++
 
-### UpdatemanifestGenerate.prop
+### Update manifestGenerate.prop
 
-- Set CreateCollectionManifest to 
-  - ManyItemsPerFolder
-- Set GetItemMetadata to 
-  - "ItemMetadataFile"
-
+```
     # Create Collection Manifest - An individual manifest will be generated for each subfolder 
     CreateCollectionManifest: ManyItemsPerFolder
+```
 
+```
     # Get Item Metadata
     GetItemMetadata: ItemMetadataFile
-
+```
 +++
 
 ### In File Analyzer - File Test Properties
