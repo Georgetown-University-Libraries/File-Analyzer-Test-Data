@@ -293,7 +293,7 @@ https://github.com/terrywbrady/info
 +++
 
 ### Configure Application for Your Local Environment
-- Make a local copy of the Manifest Generator Property 
+- Make a local copy of the Manifest Generator Property File 
 - Configure the manifestGenerate.prop file for your server
 
 
@@ -349,6 +349,8 @@ https://github.com/terrywbrady/info
 ![Screenshot](iiif/tutorial-screenshots/fa3.z.png)
 
 +++
+
+### Click Analyze to Generate the Manifest
 
 ![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
@@ -412,6 +414,8 @@ Note that the image filenames are used as canvas labels.
 
 +++
 
+### Click Analyze to Generate the Manifest
+
 ![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
 +++
@@ -472,6 +476,10 @@ Review the results. Note that title information is extracted for each item
 
 +++
 
+### Click Analyze to Generate the Manifest
+
++++
+
 Note the sequence and range information assigned to each image.
 
 +++
@@ -517,6 +525,11 @@ Note the date ranges present on the left hand side.
 ![Screenshot](iiif/tutorial-screenshots/fad4.z.png)
 
 +++
+
+### Click Analyze to Generate the Manifest
+
++++
+
 Note the sequence and range information assigned to each image.
 
 +++
@@ -606,6 +619,10 @@ Note the sequence and range information assigned to each image.
 
 +++
 
+### Click Analyze to Generate the Manifest
+
++++
+
 ![Screenshot](iiif/tutorial-screenshots/fad5a.png)
 
 +++
@@ -642,6 +659,10 @@ This translator assumes that all input folders have been matched to EAD containe
 
 - Set Project Value Translator to 
   - "EADFolderMapSubjectsOnly"
+
++++
+
+### Click Analyze to Generate the Manifest
 
 +++
 
@@ -718,6 +739,10 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 - Set Project Value Translator to 
   - "EADFolderMapSubjectsOnly"
+
++++
+
+### Click Analyze to Generate the Manifest
 
 +++
 
@@ -801,6 +826,10 @@ In this example, we will also include digital objects (DAO's) defined within the
 
 +++
 
+### Click Analyze to Generate the Manifest
+
++++
+
 ### Preview the results in Universal Viewer
 
 Note that the metadata was pulled from the CSV file (using the filename as a matching key)
@@ -841,7 +870,11 @@ Note that the metadata was pulled from the CSV file (using the filename as a mat
 
 +++
 
-### Step 4: Preview the results in Universal Viewer
+### Click Analyze to Generate the Collection Manifest and Folder Manifests
+
++++
+
+### Preview the results in Universal Viewer
 
 Note that the images have been broken into individual manifests for each box.
 
