@@ -9,12 +9,7 @@ In this example, we will also include digital objects (DAO's) defined within the
 ## Step 1: In manifestGenerate.prop, set ManifestMetadataInputFile to "[dogPhotosEADWithLinkedDAO.xml]({{site.src_path}}/iiif/dog-photos/dogPhotosEADWithLinkedDAO.xml#L135-L145)"
 
     # Manifest Metadata Input File
-    # - EAD File containing metadata
-    # - CSV File for each input directory of resources
-    # If blank, this property file will be utilized
-    #ManifestMetadataInputFile: dogPhotosEAD.xml
     ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
-    #ManifestMetadataInputFile: metadata.csv
 
 ## Step 2: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "EADFolderMapSubjectsOnly"
 

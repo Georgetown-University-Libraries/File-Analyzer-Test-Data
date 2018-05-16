@@ -19,17 +19,7 @@ The application is also designed to support the following non-DSpace specific me
 ## Step 1: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
 
     # Get Item Metadata
-    # - ItemMetadataFile - extract metadata from a file
-    #   - mets.xml from DSpace AIP export
-    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
-    # - ManfiestMetadataFile - manifest level file containing metadata for all items
-    #   - CSV files
-    # - RESTAPI - extract metadata using the DSpace REST API
-    # - None - no metadata file exists
-    #GetItemMetadata: RESTAPI
-    #GetItemMetadata: None
     GetItemMetadata: ItemMetadataFile
-    #GetItemMetadata: ManifestMetadataFile    
 
 ## Step 2: Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
 

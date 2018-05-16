@@ -784,7 +784,7 @@ In this example, we will generate a collection of manifests (one per each top le
 
 +++
 
-### Step 3: On the "File Test Properties" tab of "Criteria" tab, keep the Project Value Translator to "Default"
+### Step 3: On the "File Test Properties" tab of "Criteria" tab, set the Project Value Translator to "ByItemFolderName"
 
 Then click "Analyze"...
 
@@ -796,19 +796,7 @@ Note that the images have been broken into individual manifests for each box.
 
 +++
 
-![Screenshot](iiif/tutorial-screenshots/uv9a.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv9b.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv9c.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv9d.png)
+![Screenshot](tutorial-screenshots/uv9collection.gif)
 
 ---
 
