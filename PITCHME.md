@@ -352,6 +352,8 @@ https://github.com/terrywbrady/info
 
 ### Click Analyze to Generate the Manifest
 
++++
+
 ![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
 +++
@@ -415,6 +417,8 @@ Note that the image filenames are used as canvas labels.
 +++
 
 ### Click Analyze to Generate the Manifest
+
++++
 
 ![Screenshot](iiif/tutorial-screenshots/fa4.png)
 
