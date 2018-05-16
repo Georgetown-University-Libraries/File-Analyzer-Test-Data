@@ -348,10 +348,6 @@ The "Manifest Generate Property Filename" should match the name of the file that
 
 +++
 
-![Screenshot](iiif/tutorial-screenshots/fa4.z.png)
-
-+++
-
 ### The results will display in a table describing the items found
 
 +++
@@ -376,7 +372,7 @@ Note that the image filenames are used as canvas labels.
 
 +++
 
-![Screenshot](iiif/tutorial-screenshots/uv1a.png)
+![Screenshot](iiif/tutorial-screenshots/uv1.z.png)
 
 ---
 
@@ -409,16 +405,7 @@ The application is also designed to support the following non-DSpace specific me
 
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file
-    #   - mets.xml from DSpace AIP export
-    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
-    # - ManfiestMetadataFile - manifest level file containing metadata for all items
-    #   - CSV files
-    # - RESTAPI - extract metadata using the DSpace REST API
-    # - None - no metadata file exists
-    #GetItemMetadata: RESTAPI
-    #GetItemMetadata: None
     GetItemMetadata: ItemMetadataFile
-    #GetItemMetadata: ManifestMetadataFile    
 
 +++
 
@@ -455,7 +442,12 @@ Note the descriptive metadata in the right-hand panel.
 Note the descriptive canvas names.
 
 +++
+
 ![Screenshot](iiif/tutorial-screenshots/uv2a.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv2a.z.png)
 
 ---
 
