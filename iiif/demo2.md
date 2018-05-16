@@ -16,7 +16,7 @@ The application is also designed to support the following non-DSpace specific me
 * CSV File 
 * Embedded metadata within images (future support)
 
-## Step 1: In manifestGenerate.prop, set GetItemMetadata to "MetadataFile"
+## Step 1: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
 
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file

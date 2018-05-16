@@ -267,6 +267,12 @@ https://github.com/terrywbrady/info
 
 +++
 
+### Sample Images Listing
+
+![Sample Images Gif](iiif/tutorial-screenshots/iiifFileList.png)
+
++++
+
 ### Configure Application for Your Local Environment
 - Make a local copy of the Manifest Generator Property 
 - Configure the manifestGenerate.prop file for your server
@@ -361,7 +367,7 @@ The application is also designed to support the following non-DSpace specific me
 
 +++
 
-## Step 1: In manifestGenerate.prop, set GetItemMetadata to "MetadataFile"
+## Step 1: In manifestGenerate.prop, set GetItemMetadata to "ItemMetadataFile"
 
     # Get Item Metadata
     # - ItemMetadataFile - extract metadata from a file
