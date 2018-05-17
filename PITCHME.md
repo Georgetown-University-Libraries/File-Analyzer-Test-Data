@@ -10,19 +10,11 @@ https://github.com/terrywbrady/info
 
 ---
 
-## IIIF in DigitalGeorgetown
+### Our First IIIF Collection (Mar 2018)
 
-- March 2018 - First Collection Released
-  - [Alliance for Progress Cartoon Book Program in Latin America Collection](https://repository.library.georgetown.edu/handle/10822/1044538#?m=7)
-- Reasonably Sized Collection, Visually Interesting
-  - Item Metadata in DSpace
-- Next Steps
-  - Usability Testing
-  - Capacity Planning for Future Projects
+![Sample Manifest in UV](iiif/tutorial-screenshots/DGIIIF.gif)
 
-+++
-
-![Sample Manifest in UV](iiif/tutorial-screenshots/DGIIIF-EAD.gif)
+https://repository.library.georgetown.edu/handle/10822/1044538#?m=7
 
 +++
 ## Next Steps
