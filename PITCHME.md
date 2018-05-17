@@ -20,14 +20,7 @@ https://github.com/terrywbrady/info
 - Law Collections Described in EAD
  - Difficult to represent as items in DSpace
 - EAD Hierarchy to be represented in a manifest
-- Instructed our plans
-
-+++
-
-### Possible Future Plans
-
-- Combine digitized content with scholarship to tell a story
-- Student newspaper archive
+- Informed our design
 
 ---
 
@@ -57,29 +50,9 @@ https://github.com/terrywbrady/info
 
 ### Manifest Generation Property File
 
-@ul
-
 - Root Path to IIIF Server
 - Where to write the manifest file
 - Construct one manifest or a collection of manifests
-- Where to find metadata
-- How to assemble/format manifest ranges
-
-@ulend
-
-+++
-
-### Where to find metadata
-
-@ul
-
-- One common property file for all images
-- EAD File describing folders and items
-- CSV file containing item specific data
-- Separate metadata files for each item
-- DSpace REST API calls
-
-@ulend
 
 +++
 
@@ -113,6 +86,13 @@ https://github.com/terrywbrady/info
     # Name of the top level manifest file that will be generated
     ManifestOuputFile: dog-photos.json
 
+---
+
+### Manifest Generation Property File
+
+- Manifest Properties
+- Manifest Level Metadata
+
 +++
 
 ### Directory Separator for subfolders of image assets
@@ -123,22 +103,6 @@ https://github.com/terrywbrady/info
     #DirectorySeparator: /
     DirectorySeparator: %2F
 
-+++
-
-### Collection manifest configuration
-
-    # Create Collection Manifest - An individual manifest will be generated for each subfolder 
-    # and registered in a collection level manifest
-    #  - NoCollection: No collection manifest will be created (default)
-    #  - OneItemPerFolder: Only one item per folder, use item name for folder name
-    #  - ManyItemsPerFolder: Many items will exist per folder
-    #CreateCollectionManifest: NoCollection
-    #CreateCollectionManifest: OneItemPerFolder
-    #CreateCollectionManifest: ManyItemsPerFolder
-@[6](On manifest will be created - no collections)
-@[7](All assets in a folder will share item metadata)
-@[8](Each asset in a folder may have distinct metadata)
-   
 +++
 
 ### 2Page view Setting
@@ -158,7 +122,53 @@ https://github.com/terrywbrady/info
 
 +++
 
-### Global metadata file - applies to all items
+### Global metadata fields
+
+    # Manifest Metadata 
+    # - If not defined in another external metadata file
+    Title: Sample Manifest File with Dog Photos 
+    Attribution: Sample file illustrating File Analyzer functionality
+    DateCreated: 2017-12-12
+    Creator: Terry Brady, Georgetown University Library
+    #Description:
+    #Rights: 
+
+---
+
+### Manifest Generation Property File
+
+- Construct one manifest or a collection of manifests
+
++++
+
+### Collection manifest configuration
+
+    # Create Collection Manifest - An individual manifest will be generated for each subfolder 
+    # and registered in a collection level manifest
+    #  - NoCollection: No collection manifest will be created (default)
+    #  - OneItemPerFolder: Only one item per folder, use item name for folder name
+    #  - ManyItemsPerFolder: Many items will exist per folder
+    #CreateCollectionManifest: NoCollection
+    #CreateCollectionManifest: OneItemPerFolder
+    #CreateCollectionManifest: ManyItemsPerFolder
+@[6](On manifest will be created - no collections)
+@[7](All assets in a folder will share item metadata)
+@[8](Each asset in a folder may have distinct metadata)
+   
+---
+
+### Manifest Generation Property File
+
+- Where to find metadata
+  - One common property file for all images
+  - EAD File describing folders and items
+  - CSV file containing item specific data
+  - Separate metadata files for each item
+  - DSpace REST API calls
+
++++
+
+### Common metadata file name - applies to all items
 
     # Manifest Metadata 
     # Manifest Metadata Input File
@@ -173,19 +183,6 @@ https://github.com/terrywbrady/info
 @[6](No master metadata file)
 @[7-8](EAD XML file containing metadata)
 @[9](CSV file containing metadata for multiple items)
-
-+++
-
-### Global metadata fields
-
-    # Manifest Metadata 
-    # - If not defined in another external metadata file
-    Title: Sample Manifest File with Dog Photos 
-    Attribution: Sample file illustrating File Analyzer functionality
-    DateCreated: 2017-12-12
-    Creator: Terry Brady, Georgetown University Library
-    #Description:
-    #Rights: 
 
 +++
 
@@ -228,6 +225,15 @@ https://github.com/terrywbrady/info
 @[11](Descriptive metadata will be pulled from an item specific metadata file)
 @[12](Descriptive metadata will be pulled from a a global file applying to all assets)
 
+---
+
+### Manifest Generation Property File
+
+- Project Specific Formatting
+  - Range Construction
+  - Label Formatting
+  - Identifier extraction
+
 +++
 
 ### Conversion class name - references a java enum class name
@@ -237,12 +243,6 @@ https://github.com/terrywbrady/info
     # If blank, a default value will be assigned.
     # The class should be the name of an Enum that implements ManifestProjectTranslateEnum
     #ManifestProject: 
-
-+++
-
-### Looking For Feedback
-
-- What use cases are missing from this model?
 
 ---
 
@@ -265,8 +265,6 @@ https://github.com/terrywbrady/info
 
 ### Sample Images Listing
 
-    ./dog-photos-linked-dao/car.jpg
-    ./dog-photos-linked-dao/yawn.jpg
     ./dog-photos/box_01/2006/IMG_0063.jpg
     ./dog-photos/box_01/2010/IMG_1063.jpg
     ./dog-photos/box_01/2010/dog1.jpg
@@ -285,12 +283,11 @@ https://github.com/terrywbrady/info
     ./dog-photos/box_04/2015/IMG_5032.jpg
     ./dog-photos/box_04/2016/IMG_9030.jpg
 
-@[3-7](Box 1 files)
-@[4-5](Box 1 files from 2010)
-@[8-11](Box 2 files)
-@[12-14](Box 3 files)
-@[15-19](Box 4 files)
-@[1-2](These files will be handled separately)
+@[1-5](Box 1 files)
+@[2-3](Box 1 files from 2010)
+@[6-9](Box 2 files)
+@[10-12](Box 3 files)
+@[13-16](Box 4 files)
 
 +++
 
@@ -411,10 +408,6 @@ Note that the image filenames are used as canvas labels.
     # - ItemMetadataFile - extract metadata from a file
     GetItemMetadata: ItemMetadataFile
 ```
-
-+++
-
-### Re-run the Create IIIF Manifest task in File Analyzer (click Analyze)
 
 +++
 
@@ -562,14 +555,9 @@ Note the sequence and range information assigned to each image.
 
 ---
 
-### With EAD Subject + Folder Ranges
+### Manifest with EAD Subject Ranges
 
-![Index by EAD and Folder](iiif/tutorial-screenshots/IIIFScenarios/Slide6.JPG)
-
-+++
-
-- The named folders of images are linked to EAD components by box and folder numbers.
-- Each folder is also added to the index in case it is not matched in the EAD
+![Index by EAD](iiif/tutorial-screenshots/IIIFScenarios/Slide7.JPG)
 
 +++
 
@@ -610,53 +598,6 @@ Note the sequence and range information assigned to each image.
 
 +++
 
-### In File Analyzer - File Test Properties
-
-- Set Project Value Translator to 
-  - "EADFolderMap"
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad5.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad5.z.png)
-
-+++
-
-### Click Analyze to Generate the Manifest
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad5a.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad5a.z.png)
-
-+++
-
-### Preview the results in Universal Viewer
-
-Note the EAD hierarchy and file system folder structure present on the left hand side.
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv5.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv5.z.png)
-
----
-
-### Manifest with EAD Subject Ranges
-
-![Index by EAD](iiif/tutorial-screenshots/IIIFScenarios/Slide7.JPG)
-
-+++
-
 This translator assumes that all input folders have been matched to EAD containers
 
 +++
@@ -687,98 +628,6 @@ Note the EAD hierarchy present on the left hand side.
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/uv6.png)
-
----
-
-### With EAD + Digital Object Refs
-
-![Index by EAD and DAO](iiif/tutorial-screenshots/IIIFScenarios/Slide8.JPG)
-
-+++
-
-In this example, we will also include digital objects (DAO's) defined within the EAD into the manifest.
-
-+++
-
-### Sample EAD with DAO
-
-    <c01 id="ref4a" level="file">
-      <did>
-        <unittitle>Dog Photos Linked by DAO</unittitle>
-        <container id="cid395005a" type="Box" label="Text">5</container>
-        <container parent="cid395005a" type="Folder">2000-2020</container>
-      </did>
-    <c02 id="ref4b" level="file">
-      <did>
-        <unittitle>Other Misc Photos</unittitle>
-        <container id="cid395005b" type="Box" label="Text">5</container>
-        <container parent="cid395005b" type="Folder">2000-2020</container>
-      </did>
-      <!-- "IIIFRoot" will be replaced with IIIFRoot -->
-      <dao ns2:href="IIIFRoot-linked-dao/yawn.jpg">
-        <daodesc>
-          <p>Lily Yawning</p>
-        </daodesc>
-      </dao>
-      <dao ns2:href="IIIFRoot-linked-dao/car.jpg">
-        <daodesc>
-          <p>Lily In a Car</p>
-        </daodesc>
-      </dao>                
-
-@[1-6](Index entry for DAO inclusions0 
-@[14-18](DAO reference) 
-@[19-23](DAO reference)
- 
-+++
-
-### Update manifestGenerate.prop
-
-```
-    # Manifest Metadata Input File
-    ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
-```
-
-+++
-
-### In File Analyzer - File Test Properties
-
-- Set Project Value Translator to 
-  - "EADFolderMapSubjectsOnly"
-
-+++
-
-### Click Analyze to Generate the Manifest
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad6.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/fad6.z.png)
-
-+++
-
-### Preview the results in Universal Viewer
-
-- Note the additional items that have been imported by Digital Object URL in the EAD.
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv7.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv7.z.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv7a.png)
-
-+++
-
-![Screenshot](iiif/tutorial-screenshots/uv7a.z.png)
 
 ---
 
@@ -892,7 +741,13 @@ Note that the images have been broken into individual manifests for each box.
 
 ### Try it Yourself
 
-Give the [tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/) and let me know your results
+- Try the [tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/) yourself
+- Let me know your results
+- How well does this model your use cases?
+
+---
+
+### Thank You
 
 Terry Brady
 
