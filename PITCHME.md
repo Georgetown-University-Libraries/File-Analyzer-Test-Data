@@ -17,8 +17,9 @@ https://github.com/terrywbrady/info
 +++
 ### Next Steps
 
-- Law Collections Described in EAD
- - Difficult to represent as items in DSpace
+- Represent Archival Hierarchy with no item descriptions
+- Law Collections 
+  - Difficult to represent as items in DSpace
 - EAD Hierarchy to be represented in a manifest
 - Informed our design
 
