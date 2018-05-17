@@ -22,6 +22,9 @@ https://github.com/terrywbrady/info
 
 +++
 
+![Sample Manifest in UV](iiif/tutorial-screenshots/DGIIIF-EAD.gif)
+
++++
 ## Next Steps
 
 - Law Collections Described in EAD
@@ -49,7 +52,13 @@ https://github.com/terrywbrady/info
   - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
 - We hope this is useful for other institutions
   
-+++?image=iiif/overview.png&size=auto 90%
++++
+
+![Flow Diagram](iiif/overview.png)
+
++++
+
+![Flow Diagram](iiif/tutorial-screenshots/FileAnalyzer.gif)
 
 ---
 
