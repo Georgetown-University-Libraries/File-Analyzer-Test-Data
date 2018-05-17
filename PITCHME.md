@@ -47,6 +47,24 @@ https://github.com/terrywbrady/info
 ![Flow Diagram](iiif/tutorial-screenshots/FileAnalyzer.gif)
 
 ---
+### Prerequisite Software
+- IIIF Image Server such as Loris or Cantaloupe to serve 
+- Web Server (manifests and universal viewer) 
+
++++
+
+### Clone Repositories
+
+- Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
+- Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
+
++++
+
+### Configure Application for Your Local Environment
+- Make a local copy of the Manifest Generator Property File 
+- Configure the manifestGenerate.prop file for your server
+
+---
 
 ### Manifest Generation Property File
 
@@ -229,21 +247,10 @@ https://github.com/terrywbrady/info
 ### Manifest Builder Tutorial Demo
 
 [IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
+
 ---
-### Prerequisite Software
-- IIIF Image Server such as Loris or Cantaloupe to serve 
-- Web Server (manifests and universal viewer) 
 
-+++
-
-### Clone Repositories
-
-- Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
-- Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
-
-+++
-
-### Sample Images Listing
+### Demo File Listing
 
     ./dog-photos/box_01/2006/IMG_0063.jpg
     ./dog-photos/box_01/2010/IMG_1063.jpg
@@ -268,13 +275,6 @@ https://github.com/terrywbrady/info
 @[6-9](Box 2 files)
 @[10-12](Box 3 files)
 @[13-17](Box 4 files)
-
-+++
-
-### Configure Application for Your Local Environment
-- Make a local copy of the Manifest Generator Property File 
-- Configure the manifestGenerate.prop file for your server
-
 
 ---
 #### Basic Manifest
