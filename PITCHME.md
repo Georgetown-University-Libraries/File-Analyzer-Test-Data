@@ -10,31 +10,28 @@ https://github.com/terrywbrady/info
 
 ---
 
-### Our First IIIF Collection (Mar 2018)
+### Our [First IIIF Collection](https://repository.library.georgetown.edu/handle/10822/1044538#?m=7) (Mar 2018)
 
 ![Sample Manifest in UV](iiif/tutorial-screenshots/DGIIIF.gif)
 
-https://repository.library.georgetown.edu/handle/10822/1044538#?m=7
-
 +++
-## Next Steps
+### Next Steps
 
 - Law Collections Described in EAD
-  - Digitized AIDS Papers (on Test Server, VPN Required)
-- Difficult to represent as items in DSpace
+ - Difficult to represent as items in DSpace
 - EAD Hierarchy to be represented in a manifest
 - Instructed our plans
 
 +++
 
-## Possible Future Plans
+### Possible Future Plans
 
 - Combine digitized content with scholarship to tell a story
 - Student newspaper archive
 
 ---
 
-## Our Approach
+### Our Approach
 
 - Re-use metadata wherever possible
 - Assemble metadata and image files to facilitate manifest generation
@@ -58,7 +55,7 @@ https://repository.library.georgetown.edu/handle/10822/1044538#?m=7
 
 ---
 
-## Manifest Generation Property File
+### Manifest Generation Property File
 
 @ul
 
@@ -72,7 +69,7 @@ https://repository.library.georgetown.edu/handle/10822/1044538#?m=7
 
 +++
 
-## Where to find metadata
+### Where to find metadata
 
 @ul
 
@@ -249,7 +246,7 @@ https://repository.library.georgetown.edu/handle/10822/1044538#?m=7
 
 ---
 
-## Manifest Builder Tutorial Demo
+### Manifest Builder Tutorial Demo
 
 [IIIF Manifest Builder Tutorial](http://georgetown-university-libraries.github.io/File-Analyzer-Test-Data/iiif/)
 ---
