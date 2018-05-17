@@ -27,12 +27,10 @@ https://github.com/terrywbrady/info
 ### Our Approach
 
 - Re-use metadata wherever possible
+- Author Metadata where it makes the most sense
 - Assemble metadata and image files to facilitate manifest generation
-  - Developer intervention not needed!
-- Use our [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer) application for automation 
-- Try it yourself!
-  - [Tutorial - Generating IIIF Manifests with File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data/blob/master/iiif/README.md)
-- We hope this is useful for other institutions
+- Digitial Services team generates manifest files as needed
+- We hope this approach is useful for other institutions
   
 +++
 
@@ -62,7 +60,7 @@ https://github.com/terrywbrady/info
 
 ### Configure Application for Your Local Environment
 - Make a local copy of the Manifest Generator Property File 
-- Configure the manifestGenerate.prop file for your server
+- Configure the manifestGenerate.prop file for your environment
 
 ---
 
@@ -366,18 +364,6 @@ Note that the image filenames are used as canvas labels.
 ###  Manifest with Item Metadata
 
 ![Basic Use Case With Metadata](iiif/tutorial-screenshots/IIIFScenarios/Slide3.JPG)
-
-+++
-
-### Metadata Support
-
-- DSpace Supported metadata files.
-  - DSpace metadata input file: dublin_core.xml
-  - DSpace AIP export file: mets.xml
-  - DSpace REST API
-- Other formats
-  - CSV
-  - EAD XML 
 
 +++
 
