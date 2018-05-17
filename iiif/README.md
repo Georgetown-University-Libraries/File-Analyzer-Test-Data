@@ -14,6 +14,7 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 
 ![Flow Diagram](overview.png)
 
+### Building a IIIF Manifest with File Analyzer
 ![File Analyzer](tutorial-screenshots/FileAnalyzer.gif)
 
 ## Demonstration Video

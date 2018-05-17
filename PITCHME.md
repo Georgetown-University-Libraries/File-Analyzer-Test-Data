@@ -54,9 +54,13 @@ https://github.com/terrywbrady/info
   
 +++
 
+### Reuse of Metadata
+
 ![Flow Diagram](iiif/overview.png)
 
 +++
+
+### File Analyzer
 
 ![Flow Diagram](iiif/tutorial-screenshots/FileAnalyzer.gif)
 
