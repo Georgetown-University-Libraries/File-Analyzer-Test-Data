@@ -52,7 +52,6 @@ https://github.com/terrywbrady/info
 
 - Root Path to IIIF Server
 - Where to write the manifest file
-- Construct one manifest or a collection of manifests
 
 +++
 
@@ -60,13 +59,6 @@ https://github.com/terrywbrady/info
 
     # URL Prefix to prepend to IIIF resource URL's for this project
     IIIFRoot: https://YOUR-IMAGE-SERVER-URL/project-path
-
-+++
-
-### URL Prefix for Manifests within a Collection Manifest
-
-    # URL Prefix to prepend to manifests in a collection manifest
-    # ManifestRoot: https://YOUR-IMAGE-SERVER-URL/manifest-path
 
 +++
 
@@ -90,7 +82,7 @@ https://github.com/terrywbrady/info
 
 ### Manifest Generation Property File
 
-- Manifest Properties
+- General Manifest Properties
 - Manifest Level Metadata
 
 +++
@@ -105,15 +97,6 @@ https://github.com/terrywbrady/info
 
 +++
 
-### 2Page view Setting
-
-    # Set2PageView
-    #  - false: do not enable 2 page view (default)
-    #  - true: enable 2 page view
-    #Set2PageView: true
-
-+++
-
 ### Manifest Logo
 
     # Manifest Logo URL
@@ -122,7 +105,7 @@ https://github.com/terrywbrady/info
 
 +++
 
-### Global metadata fields
+### Boilerplate Metadata
 
     # Manifest Metadata 
     # - If not defined in another external metadata file
@@ -159,30 +142,31 @@ https://github.com/terrywbrady/info
 
 ### Manifest Generation Property File
 
-- Where to find metadata
-  - One common property file for all images
-  - EAD File describing folders and items
-  - CSV file containing item specific data
-  - Separate metadata files for each item
-  - DSpace REST API calls
+- Where to find metadata?
+  - One Common Location
+  - Item Specific Locations
 
 +++
 
-### Common metadata file name - applies to all items
+### Item Metadata Location
 
-    # Manifest Metadata 
-    # Manifest Metadata Input File
-    # - EAD File containing metadata
-    # - CSV File for each input directory of resources
-    # If blank, this property file will be utilized
-    #ManifestMetadataInputFile: 
-    #ManifestMetadataInputFile: dogPhotosEAD.xml
-    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
-    #ManifestMetadataInputFile: metadata.csv
+    # Get Item Metadata
+    # - ItemMetadataFile - extract metadata from a file
+    #   - mets.xml from DSpace AIP export
+    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
+    # - ManfiestMetadataFile - manifest level file containing metadata for all items
+    #   - CSV files
+    # - RESTAPI - extract metadata using the DSpace REST API
+    # - None - no metadata file exists
+    #GetItemMetadata: RESTAPI
+    GetItemMetadata: None
+    #GetItemMetadata: ItemMetadataFile
+    #GetItemMetadata: ManifestMetadataFile 
 
-@[6](No master metadata file)
-@[7-8](EAD XML file containing metadata)
-@[9](CSV file containing metadata for multiple items)
+@[10](Descriptive metadata does not exist for each asset)
+@[12](Descriptive metadata will be pulled from a common file)
+@[11](Descriptive metadata will be pulled from an item specific metadata file)
+@[9](Descriptive metadata will be pulled from the DSpace REST API)
 
 +++
 
@@ -205,32 +189,28 @@ https://github.com/terrywbrady/info
 
 +++
 
-### Item Metadata Location
+### Common metadata file name - applies to all items
 
-    # Get Item Metadata
-    # - ItemMetadataFile - extract metadata from a file
-    #   - mets.xml from DSpace AIP export
-    #   - dublin_core.xml from DSpace Simple Archive Format metadata file
-    # - ManfiestMetadataFile - manifest level file containing metadata for all items
-    #   - CSV files
-    # - RESTAPI - extract metadata using the DSpace REST API
-    # - None - no metadata file exists
-    #GetItemMetadata: RESTAPI
-    GetItemMetadata: None
-    #GetItemMetadata: ItemMetadataFile
-    #GetItemMetadata: ManifestMetadataFile 
+    # Manifest Metadata 
+    # Manifest Metadata Input File
+    # - EAD File containing metadata
+    # - CSV File for each input directory of resources
+    # If blank, this property file will be utilized
+    #ManifestMetadataInputFile: 
+    #ManifestMetadataInputFile: dogPhotosEAD.xml
+    #ManifestMetadataInputFile: dogPhotosEADWithLinkedDAO.xml
+    #ManifestMetadataInputFile: metadata.csv
 
-@[9](Descriptive metadata will be pulled from the DSpace REST API)
-@[10](Descriptive metadata will not exist for each asset)
-@[11](Descriptive metadata will be pulled from an item specific metadata file)
-@[12](Descriptive metadata will be pulled from a a global file applying to all assets)
+@[6](No master metadata file - individual locations for each item)
+@[7-8](EAD XML file containing metadata)
+@[9](CSV file containing metadata for multiple items)
 
 ---
 
 ### Manifest Generation Property File
 
 - Project Specific Formatting
-  - Range Construction
+  - Range Construction (date, container, project specific)
   - Label Formatting
   - Identifier extraction
 
@@ -287,7 +267,7 @@ https://github.com/terrywbrady/info
 @[2-3](Box 1 files from 2010)
 @[6-9](Box 2 files)
 @[10-12](Box 3 files)
-@[13-16](Box 4 files)
+@[13-17](Box 4 files)
 
 +++
 
