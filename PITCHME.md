@@ -71,7 +71,7 @@ https://github.com/terrywbrady/info
 
 - Clone/Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
 - Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
-- IIIF Image Server such as Loris or Cantaloupe to serve 
+- IIIF Image Server such as Loris or Cantaloupe to serve images
 - Web Server (manifests and universal viewer) 
 
 +++
