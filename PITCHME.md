@@ -36,7 +36,7 @@ https://github.com/terrywbrady/info
 
 +++
 
-### A future digital collection from our Law Center
+### Future Collection - From EAD
 
 ![Sample Manifest from EAD in UV](iiif/tutorial-screenshots/DGIIIF-EAD.gif)
 
