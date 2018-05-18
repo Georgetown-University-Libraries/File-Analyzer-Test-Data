@@ -602,9 +602,6 @@ This translator assumes that all input folders have been matched to EAD containe
 - Set Project Value Translator to 
   - "EADFolderMapSubjectsOnly"
 
-+++
-
-### Click Analyze to Generate the Manifest
 
 +++
 
@@ -616,6 +613,10 @@ This translator assumes that all input folders have been matched to EAD containe
 
 +++
 
+### Click Analyze to Generate the Manifest
+
++++
+
 ### Preview the results in Universal Viewer
 
 Note the EAD hierarchy present on the left hand side.
@@ -623,6 +624,10 @@ Note the EAD hierarchy present on the left hand side.
 +++
 
 ![Screenshot](iiif/tutorial-screenshots/uv6.png)
+
++++
+
+![Screenshot](iiif/tutorial-screenshots/uv6z.png)
 
 ---
 
