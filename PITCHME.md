@@ -12,16 +12,33 @@ https://github.com/terrywbrady/info
 
 ### Our [First IIIF Collection](https://repository.library.georgetown.edu/handle/10822/1044538#?m=7) (Mar 2018)
 
+- Manuscript Collection of digitized comic books
+  - Recently digitized
+  - Visually interesting
+- Item metadata already existed in DSpace
+
++++ 
+
+### Our [First IIIF Collection](https://repository.library.georgetown.edu/handle/10822/1044538#?m=7) (Mar 2018)
+
 ![Sample Manifest in UV](iiif/tutorial-screenshots/DGIIIF.gif)
 
 +++
-### Next Steps
 
-- Represent Archival Hierarchy with no item descriptions
-- Law Collections 
-  - Difficult to represent as items in DSpace
-- EAD Hierarchy to be represented in a manifest
+### A future digital collection from our Law Center
+
+- Digitized archival collection
+- No item level metadata
+- Conceptually difficult to imagine as items
+- Only box/folder descriptive information in an EAD
+- Digitized folders are named to match EAD container labels
 - Informed our design
+
++++
+
+### A future digital collection from our Law Center
+
+![Sample Manifest from EAD in UV](iiif/tutorial-screenshots/DGIIIF-EAD.gif)
 
 ---
 
@@ -46,20 +63,20 @@ https://github.com/terrywbrady/info
 ![Flow Diagram](iiif/tutorial-screenshots/FileAnalyzer.gif)
 
 ---
+
+### Demonstration of Our Manifest Generation Tool
+
+---
 ### Prerequisite Software
+
+- Clone/Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
+- Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
 - IIIF Image Server such as Loris or Cantaloupe to serve 
 - Web Server (manifests and universal viewer) 
 
 +++
 
-### Clone Repositories
-
-- Install [File Analyzer](https://github.com/Georgetown-University-Libraries/File-Analyzer)
-- Clone [File Analyzer Test Data](https://github.com/Georgetown-University-Libraries/File-Analyzer-Test-Data)
-
-+++
-
-### Configure Application for Your Local Environment
+### Configure Manifest Generator for Your Local Environment
 - Make a local copy of the Manifest Generator Property File 
 - Configure the manifestGenerate.prop file for your environment
 
@@ -67,7 +84,18 @@ https://github.com/terrywbrady/info
 
 ### Manifest Generation Property File
 
-- Root Path to IIIF Server
+@ul
+
+- URL/Path Configuration
+- Manifest Properties
+- One Manifest or Collection of Manifests
+- Where to Find Metadata
+
+@ulend
+
+---
+### Manifest Generation Property File - Paths
+- Root URL to IIIF Server
 - Where to write the manifest file
 
 +++
@@ -97,7 +125,7 @@ https://github.com/terrywbrady/info
 
 ---
 
-### Manifest Generation Property File
+### Manifest Generation Property File - Properties
 
 - General Manifest Properties
 - Manifest Level Metadata
@@ -135,7 +163,7 @@ https://github.com/terrywbrady/info
 
 ---
 
-### Manifest Generation Property File
+### Manifest Generation Property File - Collections
 
 - Construct one manifest or a collection of manifests
 
@@ -157,7 +185,7 @@ https://github.com/terrywbrady/info
    
 ---
 
-### Manifest Generation Property File
+### Manifest Generation Property File - Metadata
 
 - Where to find metadata?
   - One Common Location
