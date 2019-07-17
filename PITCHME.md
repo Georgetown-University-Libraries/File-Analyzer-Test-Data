@@ -1,4 +1,4 @@
-## Generating IIIF Manifests from Repository Metadata and Archival Metadata (EAD)
+### Generating IIIF Manifests from Repository Metadata and Archival Metadata (EAD)
 
 Terry Brady
 
