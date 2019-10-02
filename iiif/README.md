@@ -18,7 +18,7 @@ The File Analyzer is a Java Swing desktop application.  The application assumes 
 ![File Analyzer](tutorial-screenshots/FileAnalyzer.gif)
 
 ## Demonstration Video
-
-[![Demonstration Video](https://i.ytimg.com/vi/K0k8f3cRSJ0/hqdefault.jpg)](https://www.youtube.com/watch?v=K0k8f3cRSJ0)
+6bc4ZczP0gI
+[![Demonstration Video](https://i.ytimg.com/vi/6bc4ZczP0gI/hqdefault.jpg)](https://www.youtube.com/watch?v=6bc4ZczP0gI)
 
 {% include nav.html %}
